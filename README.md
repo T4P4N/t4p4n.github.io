@@ -1,8 +1,8 @@
 ## Links on This Page
 
 [https://t4p4n.github.io/awesome-termux](Awesome-Termux)
-[https://t4p4n.blogspot.com/](My Blog)
-[https://github.com/T4P4N/t4p4n.github.io/master/README.md](This Page)
+[https://t4p4n.blogspot.com/](My_Blog)
+[https://github.com/T4P4N/t4p4n.github.io/master/README.md](This_Page)
 
 ### Markdown
 
