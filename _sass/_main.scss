@@ -34,7 +34,7 @@ html {
 
 html,
 html[data-theme="light"] {
-	--text-font: Play;
+	--text-font: 'Exo 2';
 	--source-code-font: Source Code Pro;
 	--very-light-text-color: rgb(222, 222, 222);
 	--light-text-color: rgb(89, 183, 255);
@@ -44,7 +44,7 @@ html[data-theme="light"] {
 	--dark-text-color: #393e46;
 	--link-color: rgb(50, 87, 209);
 	--code-bg-color: rgb(245, 245, 245);
-
+  --flag-point-color: #ffffff;
 	background-color: rgb(255, 255, 255);
 
 	
@@ -98,7 +98,7 @@ html[data-theme="light"] {
 }
 
 html[data-theme="dark"] {
-	--text-font: Play;
+	--text-font: 'Exo 2';
 	--source-code-font: Source Code Pro;
 	--very-light-text-color: #EEE;
 	--light-text-color: #c4bbf0;
@@ -106,9 +106,18 @@ html[data-theme="dark"] {
 	--main-text-color: #EAEAEA;
 	--highlight-text-color: #6cb4a0;
 	--dark-text-color: rgb(36, 38, 42);
-	--link-color: rgb(255, 89, 125);
+	--link-color: rgb(119, 151, 255);
 	--code-bg-color: rgb(36, 38, 42);
 	background-color: rgb(19, 20, 24);
+  --flag-point-color: #131418;
+
+  .time-wrapper {
+    .time {
+      display: inline-block;
+      padding: 4px 6px;
+      background-color: rgb(19, 20, 24);
+    }
+  }     
 
 	#theme-toggle div {
 		position: relative;
@@ -388,7 +397,10 @@ main {
   position: initial;
 
   .social-footer-icons {
-     
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     place-items: center;
+     gap: 10px;
     .fa {
       font-size: 1.3rem;
       color: #a9a9a9;
@@ -626,7 +638,7 @@ $link-color: var(--link-color);
       height: 0;
       width: 0;
       margin-top: -8px;
-      border: solid transparent;
+      border: solid var(--flag-point-color);
       border-left-color: rgb(248,248,248);
       border-width: 8px;
       pointer-events: none;
@@ -638,7 +650,7 @@ $link-color: var(--link-color);
         height: 0;
         width: 0;
         margin-left: -8px;
-        border: solid transparent;
+        border: solid var(--flag-point-color);
         border-bottom-color: rgb(255,255,255);
         border-width: 8px;
         pointer-events: none;
@@ -675,7 +687,7 @@ $link-color: var(--link-color);
       height: 0;
       width: 0;
       margin-top: -8px;
-      border: solid transparent;
+      border: solid var(--flag-point-color);
       border-right-color: rgb(248,248,248);
       border-width: 8px;
       pointer-events: none;
@@ -687,7 +699,7 @@ $link-color: var(--link-color);
         height: 0;
         width: 0;
         margin-left: -8px;
-        border: solid transparent;
+        border: solid var(--flag-point-color);
         border-bottom-color: rgb(255,255,255);
         border-width: 8px;
         pointer-events: none;

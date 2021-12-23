@@ -1,29 +1,29 @@
-site: Gesko
-title: Gesko
-greetings: Hi 👋
+site: My Blog
+title: T4P4N
+greetings: WELCOME TO MY BLOG! 👋
 description: >-
-  just a minimalist, personal blog
-lang: en-US
-timezone:  Europe/Rome
-repo: https://github.com/p0wex/Gesko # site repo [optional]
+  Hmmmmmmm.
+lang: en-UK
+timezone: Asia/Kolkata
+# repo: https://github.com/p0wex/Gesko # site repo [optional]
 data-theme: dark # default theme "dark" | "light"
-discus-identifier: powex # replace with your disqus shortname
+# discus-identifier: powex # replace with your disqus shortname
 
 author:
-  name: gesko
-  bio: just a minimalist, personal blog
+  name: Tapan Kashyap
+  bio: Web Developer
   userpicture: 
-  username: # general username
-  github: # github username
-  twitter: # twitter username
-  email: your-email@email.com # email adress
+  username: T4P4N# general username
+  github: github.com/t4p4n# github username
+  twitter: tapankashyap1# twitter username
+  email: tapank415@gmail.com # email adress
 
 # Font Settings
-googlewebfonts: family=Play:wght@400;700&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,900
+googlewebfonts: family=Exo+2:wght@400;700&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,900
 
 # URL settings
-url: "https://p0wex.github.io" # Domain Name of host. [username].github.io for github pages
-baseurl: "/Gesko" # sub folder for jekyll site. only if jekyll site not in root of host. leave blank if not wishd. always add / in front.
+url: "t4p4n.github.io" # Domain Name of host. [username].github.io for github pages
+baseurl: "" # sub folder for jekyll site. only if jekyll site not in root of host. leave blank if not wishd. always add / in front.
 permalink: pretty
 
 # local
@@ -45,6 +45,11 @@ exclude:
   - LICENSE.md
   - README.md
   - CONTRIBUTING.md
+
+include: 
+  - _posts/
+
+
   
 compress_html:
   clippings: all
@@ -81,7 +86,7 @@ defaults:
       layout: "page"
   -
     scope:
-      path: ""
+      path: "/posts"
       type: "posts"
     values:
       layout: "post"
