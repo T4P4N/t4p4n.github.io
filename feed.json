@@ -1,11 +1,11 @@
 {
     "version": "https://jsonfeed.org/version/1",
     "title": "T4P4N",
-    "home_page_url": "t4p4n.github.io/",
-    "feed_url": "t4p4n.github.io/feed.json",
+    "home_page_url": "https://t4p4n.github.io/",
+    "feed_url": "https://t4p4n.github.io/feed.json",
     "description": "Hmmmmmmm.",
-    "icon": "t4p4n.github.io/apple-touch-icon.png",
-    "favicon": "t4p4n.github.io/favicon.ico",
+    "icon": "https://t4p4n.github.io/apple-touch-icon.png",
+    "favicon": "https://t4p4n.github.io/favicon.ico",
     "expired": false,
     
     "author":  {
@@ -17,12 +17,12 @@
 "items": [
     
         {
-            "id": "t4p4n.github.io/2021/12/23/hello-world",
+            "id": "https://t4p4n.github.io/2021/12/23/hello-world",
             "title": "Hello World",
             "summary": null,
             "content_text": "TitleMain HeadHello World this is working i guess!Sub Head  List Item          nested item                  more nests                    Code Snippet",
             "content_html": "<h1 id=\"title\">Title</h1><h2 id=\"main-head\">Main Head</h2><p>Hello World this is working i guess!</p><h2 id=\"sub-head\">Sub Head</h2><ul>  <li>List Item    <ul>      <li>nested item        <ul>          <li>more nests</li>        </ul>      </li>    </ul>  </li></ul><p><code class=\"language-plaintext highlighter-rouge\">Code Snippet</code></p>",
-            "url": "t4p4n.github.io/2021/12/23/hello-world",
+            "url": "https://t4p4n.github.io/2021/12/23/hello-world",
             
             
             

@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: t4p4n.github.io/sitemap.xml
+Sitemap: https://t4p4n.github.io/sitemap.xml
