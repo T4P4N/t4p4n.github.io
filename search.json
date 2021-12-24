@@ -1,6 +1,15 @@
 [
   
     {
+      "title"    : "Education Rant",
+      "description" : "How modern education system in india is a disaster.",
+      "category" : "",
+      "tags"     : "education, rant",
+      "url"      : "/2021/12/24/education-rant",
+      "date"     : "2021-12-24 00:00:00 +0530"
+    } ,
+  
+    {
       "title"    : "Hello World",
       "description" : "",
       "category" : "",
