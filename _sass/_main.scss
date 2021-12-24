@@ -397,10 +397,9 @@ main {
   position: initial;
 
   .social-footer-icons {
-     display: grid;
-     grid-template-columns: 1fr 1fr 1fr;
-     place-items: center;
-     gap: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
     .fa {
       font-size: 1.3rem;
       color: #a9a9a9;
@@ -454,7 +453,7 @@ figcaption {
 }
 
 ::selection {
-background-color: #fffba0;
+background-color: var(--link-color);
 color: #333;
 }
 
@@ -497,6 +496,7 @@ color: #333;
 
   text-align: center;
   li {
+    list-style-type: none;
     text-align: center;
   }
 }
@@ -803,5 +803,14 @@ $link-color: var(--link-color);
     box-shadow: 0 0 1px rgba(0,0,0,0.20);
     z-index: 15;
     
+  }
+}
+
+#intro > div.bio > p > a > i {
+  margin-top: 10px;
+  margin-right: 5px;
+  transition: ease-in-out 400ms;
+  &:hover {
+    color: #ffc83d;
   }
 }

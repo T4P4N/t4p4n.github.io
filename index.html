@@ -11,7 +11,9 @@ layout: default
     <div class="bio">
 	    {{ site.description }}
         <p>
-	    <a href="{{ site.url }}{{ site.baseurl }}/about/">> About me</a>
+	        <a href="{{ site.url }}{{ site.baseurl }}/about/">
+               <i class="fa fa-user-circle-o" aria-hidden="true"></i> About Me
+            </a>
         </p>
     </div>
 
@@ -31,7 +33,7 @@ layout: default
         </svg>
     </label>
 
-    <input type="search" id="search-input" placeholder="Find some articles here" aria-label="Search">
+    <input type="search" id="search-input" placeholder="Type something to search" aria-label="Search">
     <ul id="search-results"></ul>
 </div>
 

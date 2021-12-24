@@ -1,8 +1,8 @@
 site: My Blog
 title: T4P4N
-greetings: WELCOME TO MY BLOG! 👋
+greetings: Hello World
 description: >-
-  Hmmmmmmm.
+  I'm Tapan Kashyap. Welcome to my personal space on the internet.
 lang: en-UK
 timezone: Asia/Kolkata
 # repo: https://github.com/p0wex/Gesko # site repo [optional]
@@ -46,8 +46,6 @@ exclude:
   - README.md
   - CONTRIBUTING.md
 
-include: 
-  - _posts/
 
 
   
@@ -80,13 +78,13 @@ defaults:
       layout: "default"
   -
     scope:
-      path: ""
+      path: "pop"
       type: "pages"
     values:
       layout: "page"
   -
     scope:
-      path: "/posts"
+      path: ""
       type: "posts"
     values:
       layout: "post"
