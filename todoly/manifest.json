@@ -1,0 +1,22 @@
+{
+    "name":"Todoly",
+    "short_name":"Todoly",
+    "start_url":"index.html",
+    "display":"standalone",
+    "background_color":"#5900b3",
+    "theme_color":"black",
+    "scope": ".",
+    "description":"A Simple Todo List App!",
+    "icons":[
+    {
+    "src":"images/msteams/msteams-192-192.png",                     
+    "sizes":"192x192",
+    "type":"image/png"
+    },
+    {
+    "src":"images/firefox/firefox-marketplace-512-512.png",
+    "sizes":"512x512",
+    "type":"image/png"
+    }
+  ]
+}
