@@ -78,10 +78,10 @@ defaults:
       layout: "default"
   -
     scope:
-      path: "pop"
+      path: "my-projects"
       type: "pages"
     values:
-      layout: "page"
+      layout: "my-pages"
   -
     scope:
       path: ""
