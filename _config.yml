@@ -3,6 +3,7 @@ title: T4P4N
 greetings: Hello World
 description: >-
   I'm Tapan Kashyap. Welcome to my personal space on the internet.
+
 lang: en-UK
 timezone: Asia/Kolkata
 # repo: https://github.com/p0wex/Gesko # site repo [optional]
@@ -63,6 +64,7 @@ plugins:
   - jekyll-relative-links
 
 collections:
+
   pages:
     output: true
     permalink: /:name

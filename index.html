@@ -16,6 +16,17 @@ layout: default
             </a>
         </p>
     </div>
+    <div class="links">
+        <p class='links-header'>Quick links to my projects</p>
+        {% for link in site.data.links %}
+            <li class='link'>
+                <a href="{{ site.url }}{{ site.baseurl }}{{ link.slug }}">
+                    {{ link.name }} 
+                </a>
+                <p>{{ link.desc }}</p>
+            </li>
+        {% endfor %}
+    </div>
 
 
 </section>
