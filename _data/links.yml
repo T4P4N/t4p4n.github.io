@@ -1,0 +1,8 @@
+- name: Todoly
+  slug: /todoly
+  desc: A todo progressive web application made using vanillajs
+
+- name: Hacker News Search Engine
+  slug: /react-hn  
+  desc: A Search Engine for Hacker News made using Reactjs
+
