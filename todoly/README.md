@@ -6,6 +6,7 @@
   - Todos will stay on page even if you reload it
 - ~~Strikethrough~~
   - Mark todos as done by tapping the check button
+  - Double tap to undo.
 - Delete todos
   - Delete your todos when you are done with them. use X button
 - Animations
