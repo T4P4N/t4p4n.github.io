@@ -27,7 +27,7 @@ body, h1, h2, h3, p {
 
 .container {
     margin-inline: auto;
-    width: min(90%, 20rem);
+    width: min(90%, 70.5rem);
     display: flex;
     flex-direction: column;
     margin-left: auto;
@@ -43,13 +43,8 @@ li {
     color: var(--pri);
 }
 
-.todo-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 #btn-x {
+    margin-left: 5%;
     color: red;
     padding: 0.5em 0.6em;
     text-decoration: none;
@@ -57,11 +52,12 @@ li {
     background-color: var(--pri2);
     cursor: pointer;
     align-self: flex-end;
-    margin-right: 2px;
 }
 
 #btn-c {
-    margin-left: 2px;
+    /* margin-left: 1em; */
+    /* margin-top: -5px; */
+    margin-left: 5px;
     color: green;
     padding: 0.5em 0.6em;
     border-radius: 10px;
@@ -86,15 +82,13 @@ h1 {
     margin-bottom: 1em;
     margin-top: .1em;
     border-radius: 10px;
-    color: #ecd27a;
+    color: var(--pri);
     background-color: #111b2b;
     border: 2px solid #ffdc6a65;
     height: 20px;
     padding: 1em 0.5em;
     font-size: 15pt;
-    font-weight: lighter;
     width: min(90%, 20rem);
-    font-family: var(--ff-primary);
 }
 
 #btn-sbt {
