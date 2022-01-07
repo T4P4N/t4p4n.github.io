@@ -6,7 +6,7 @@ class Todo {
   }
 }
 
-const API_URL = 'http://t4p4n.github.io/todoly/changelog.json';
+const API_URL = 'https://t4p4n.github.io/todoly/changelog.json';
 
 async function fetchchangelog() {
  try{
