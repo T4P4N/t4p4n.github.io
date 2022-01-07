@@ -6,9 +6,19 @@ class Todo {
   }
 }
 
-let toDos = localStorage.getItem("my-todos")
-  ? JSON.parse(localStorage.getItem("my-todos"))
-  : [{ msg: "Double tap me to undo", is_done: true, id: 1 }];
+const API_URL = 'http://t4p4n.github.io/todoly/changelog.json';
+
+async function fetchchangelog() {
+ try{
+   const response = await fetch(API_URL)
+   const changelog = await response.json();
+   return changelog;
+  }catch(err){
+    console.error(err); 
+  }
+}
+
+
 let id = 0;
 var btnsbt = document.getElementById("btn-sbt");
 btnsbt.addEventListener("click", addTodo);
@@ -19,8 +29,6 @@ var msg = document.getElementById("msg-input");
 // get container
 var todoContainer = document.querySelector(".container");
 
-loadDom();
-
 todoContainer.addEventListener("click", function (e) {
   if (e.target.id === "btn-x") {
     removeTodo(e);
@@ -30,11 +38,35 @@ todoContainer.addEventListener("click", function (e) {
   }
 });
 
-function loadDom(e) {
-  toDos.forEach((i) => {
-    limaker(i.msg, i.is_done);
+let toDos
+const loadDom = async () => {
+  toDos = localStorage.getItem("my-todos")
+  ? JSON.parse(localStorage.getItem("my-todos"))
+  : fetchchangelog().then(changelog => localStorage.setItem("my-todos", JSON.stringify(changelog.changelog.msgs)))
+  .then(changelog => {
+    toDos = localStorage.getItem("my-todos")
+    ? JSON.parse(localStorage.getItem("my-todos")): console.log("nope");
+    return (toDos.forEach
+      (async function (i) {
+          limaker(await i.msg, await i.is_done);
+        }))
+    // fetched changelog
+    
   });
+  try {
+    toDos.forEach
+      (async function (i) {
+          limaker(await i.msg, await i.is_done);
+        });
+  }
+  catch(err){
+    console.log(err); 
+  }
 }
+
+
+loadDom();
+
 
 function addTodo(e) {
   e.preventDefault();
@@ -155,4 +187,40 @@ function markDone(e) {
       }
     });
   }
+}
+
+// Theme stuff
+const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'light');
+    }
+    else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    }    
+}
+
+// load user theme from lc
+toggleSwitch.addEventListener('change', switchTheme, false);
+
+function switchTheme(e) {
+  if (e.target.checked) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      localStorage.setItem('theme', 'dark'); //add this
+  }
+  else {
+      document.documentElement.setAttribute('data-theme', 'light');
+      localStorage.setItem('theme', 'light'); //add this
+  }    
+}
+
+const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+
+    if (currentTheme === 'dark') {
+        toggleSwitch.checked = true;
+    }
 }

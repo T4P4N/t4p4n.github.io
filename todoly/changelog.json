@@ -1,0 +1,16 @@
+{
+    "changelog": {
+      "msgs": [
+        {
+            "msg": "Tap above todoly",
+            "is_done": false,
+            "id": 1
+        },
+        {
+            "msg": "Double tap me to undo",
+            "is_done": true,
+            "id": 2
+        }
+      ]
+    }
+  }

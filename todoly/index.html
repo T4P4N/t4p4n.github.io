@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Todoly | Simple Todo PWA</title>
+    <meta name="description" content="Minimal offline & Open Source todo App With Dark Theme & Animations!">
     <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
@@ -30,11 +31,19 @@
     <link rel="stylesheet" href="style.css" type="text/css" media="all" />
 </head>
 <body>
+  <div class="theme-switch-wrapper">
+    <label class="theme-switch" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <div class="slider round"></div>
+  </label>
+</div>
+  <h1>Todoly</h1>
+  <div class="form-div">
     <form class="add-form">
-        <h1>Todoly</h1>
-        <input type="text" name="Msg" id="msg-input" value="" placeholder="Some text here" required autofocus minlength="3"/>
+        <input type="text" name="Msg" id="msg-input" value="" placeholder="Some text here" required autofocus/>
         <button type="submit" class="ripple" id="btn-sbt">Add todo</button>
     </form>
+  </div>
 
     <div class="container">
 
@@ -55,7 +64,7 @@
                     .register('serviceworker.js');
             }
             catch (e) {
-              console.log('SW registration failed');
+              console.log('SW registration failed', e);
             }
           }
         }
