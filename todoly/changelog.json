@@ -2,14 +2,29 @@
     "changelog": {
       "msgs": [
         {
-            "msg": "Tap above todoly",
+            "msg": "Tap on top left",
             "is_done": false,
-            "id": 1
+            "id": 9991
         },
         {
+          "msg": "to toggle dark theme",
+          "is_done": false,
+          "id": 9992
+        },
+        {
+            "msg": "And tap on top right",
+            "is_done": false,
+            "id": 9993
+        },
+        {
+          "msg": "To toggle header/logo",
+          "is_done": false,
+          "id": 9994
+        },
+          {
             "msg": "Double tap me to undo",
             "is_done": true,
-            "id": 2
+            "id": 9995
         }
       ]
     }

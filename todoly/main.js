@@ -224,3 +224,16 @@ if (currentTheme) {
         toggleSwitch.checked = true;
     }
 }
+
+function hideLogo() {
+  var logo = document.querySelector("h1");
+  var formdiv = document.querySelector(".form-div")
+  if (logo.style.display === "block") {
+    formdiv.style.marginTop = "1em"
+    logo.style.display = "none";
+  } else {
+    logo.style.display = "block";
+  }
+}
+
+const getLogo = document.querySelector('.toogle').addEventListener('click', hideLogo)
