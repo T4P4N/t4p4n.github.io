@@ -2,29 +2,49 @@
     "changelog": {
       "msgs": [
         {
-            "msg": "Tap on top left",
+            "msg": "Tap on top left to toggle logo",
             "is_done": false,
             "id": 9991
         },
         {
-          "msg": "to toggle dark theme",
+          "msg": "Type a theme name in input field",
           "is_done": false,
           "id": 9992
         },
         {
-            "msg": "And tap on top right",
+            "msg": "And press alt + t",
             "is_done": false,
             "id": 9993
         },
         {
-          "msg": "To toggle header/logo",
+          "msg": "Available themes are:",
           "is_done": false,
           "id": 9994
+        },
+        {
+          "msg": "dark",
+          "is_done": false,
+          "id": 9995
+        },
+        {
+          "msg": "gruvbox",
+          "is_done": false,
+          "id": 9996
+        },
+        {
+          "msg": "monokai",
+          "is_done": false,
+          "id": 9997
+        },
+        {
+          "msg": "nord",
+          "is_done": false,
+          "id": 9998
         },
           {
             "msg": "Double tap me to undo",
             "is_done": true,
-            "id": 9995
+            "id": 9999
         }
       ]
     }

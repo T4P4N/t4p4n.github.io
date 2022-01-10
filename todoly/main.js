@@ -190,50 +190,89 @@ function markDone(e) {
 }
 
 // Theme stuff
-const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-
-function switchTheme(e) {
-    if (e.target.checked) {
-        document.documentElement.setAttribute('data-theme', 'light');
-    }
-    else {
-        document.documentElement.setAttribute('data-theme', 'dark');
-    }    
-}
-
-// load user theme from lc
-toggleSwitch.addEventListener('change', switchTheme, false);
-
-function switchTheme(e) {
-  if (e.target.checked) {
-      document.documentElement.setAttribute('data-theme', 'dark');
-      localStorage.setItem('theme', 'dark'); //add this
-  }
-  else {
-      document.documentElement.setAttribute('data-theme', 'light');
-      localStorage.setItem('theme', 'light'); //add this
-  }    
-}
-
 const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
 
 if (currentTheme) {
     document.documentElement.setAttribute('data-theme', currentTheme);
+}
 
-    if (currentTheme === 'dark') {
-        toggleSwitch.checked = true;
+// Header Toggle with persistence
+const toggleSwitch = document.querySelector('.logo-switch input[type="checkbox"]');
+toggleSwitch.addEventListener('change', toggleLogo, false);
+var logo = document.querySelector("h1");
+var formdiv = document.querySelector(".form-div")
+function toggleLogo(e) {
+  
+  if (e.target.checked) {
+      logo.style.display = "none";
+      formdiv.style.marginTop = "1em"
+      localStorage.setItem('logo-status', 'hidden'); //add this
+  }
+  else {
+      logo.style.display = "block";
+      localStorage.setItem('logo-status', 'visible'); //add this
+  }    
+}
+
+const logoStatus = localStorage.getItem('logo-status') ? localStorage.getItem('logo-status') : null;
+
+if (logoStatus) {
+    if (logoStatus === 'hidden') {
+
+      logo.style.display = "none";
+      formdiv.style.marginTop = "1em"
+      localStorage.setItem('logo-status', 'hidden');
+      toggleSwitch.checked = true;
     }
 }
 
-function hideLogo() {
-  var logo = document.querySelector("h1");
-  var formdiv = document.querySelector(".form-div")
-  if (logo.style.display === "block") {
-    formdiv.style.marginTop = "1em"
-    logo.style.display = "none";
-  } else {
-    logo.style.display = "block";
-  }
-}
 
-const getLogo = document.querySelector('.toogle').addEventListener('click', hideLogo)
+
+
+//////////////////
+// Command actions
+document.addEventListener('keydown', e => {
+  // Modifiers Windows: [Alt], Mac: [Cmd + Ctrl]
+  if (e.altKey || (e.metaKey && e.ctrlKey)) {
+    // [mod + t] => Change the theme
+    if (e.key === 't') {
+      setTheme(msg);}
+    if (e.key === 'l') {
+      // Todo add callback here for logo toggle
+  } else if (e.key === 'Escape') {
+    setText(e);
+  }}});
+  
+function setTheme(msg) {
+  switch (msg.value) {
+    case 'dark':
+      document.documentElement.setAttribute('data-theme', 'dark');
+      localStorage.setItem('theme', 'dark');
+      break;
+    
+    case 'light':
+      document.documentElement.setAttribute('data-theme', 'light');
+      localStorage.setItem('theme', 'light'); 
+      break;
+    
+    case 'nord':
+      document.documentElement.setAttribute('data-theme', 'nord');
+      localStorage.setItem('theme', 'nord'); 
+      break;
+   
+    case 'gruvbox':
+      document.documentElement.setAttribute('data-theme', 'gruvbox');
+      localStorage.setItem('theme', 'gruvbox'); 
+      break;
+    
+    case 'monokai':
+      document.documentElement.setAttribute('data-theme', 'monokai');
+      localStorage.setItem('theme', 'monokai'); 
+      break;
+
+
+
+    default:
+      break;
+  }};
+
