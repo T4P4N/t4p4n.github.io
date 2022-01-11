@@ -1,7 +1,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <meta name="description" content="T4P4N's Personal Space On The Internet">
   <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/syntax.css">
   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -24,14 +24,16 @@
       {% endunless %}
     </title>
   
-  
-
-  
-    <link rel="shortcut icon" href="{{ site.url }}{{ site.baseurl }}/favicon.png">
+  <!-- Favicons -->
+    <link rel="shortcut icon" href="{{ site.url }}{{ site.baseurl }}/assets/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.url }}{{ site.baseurl }}/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.url }}{{ site.baseurl }}/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ site.url }}{{ site.baseurl }}/assets/images/favicon-16x16.png">
+    <link rel="manifest" href="{{ site.url }}{{ site.baseurl }}/assets/images/site.webmanifest">
+  <!-- Rss & Sitemaps  -->
     <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.url }}{{ site.baseurl }}/atom.xml">
     <link rel="alternate" type="application/json" title="{{ site.title }}" href="{{ site.url }}{{ site.baseurl }}/feed.json" />
     <link rel="sitemap" type="application/xml" title="sitemap" href="{{ site.url }}{{ site.baseurl }}/sitemap.xml" />
-      
   {% if site.googlewebfonts %}
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?{{ site.googlewebfonts }}&display=swap" rel="stylesheet">
