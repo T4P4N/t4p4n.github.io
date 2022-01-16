@@ -6,3 +6,7 @@
   slug: /react-hn  
   desc: A Search Engine for Hacker News made using Reactjs
 
+- name: Hex2Dec
+  slug: /hex2dec  
+  desc: A Hexadecimal to Decimal Converter made using Reactjs.
+
