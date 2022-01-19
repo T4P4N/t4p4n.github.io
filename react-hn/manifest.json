@@ -10,7 +10,7 @@
     "icons":[
     {
       "src":"images/android-chrome-full.png",
-      "sizes":"1024x1024",
+      "sizes":"1000x1000",
       "type":"image/png"
     },
     {
