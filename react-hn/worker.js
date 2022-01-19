@@ -6,7 +6,7 @@ self.addEventListener("install", function (e) {
       return cache.addAll([
         "./static/js/2.9d05bfa1.chunk.js",
         "./static/js/2.9d05bfa1.chunk.js.map",
-        "./static/js/2.9d05bfa1.chunk.LICENSE.txt",
+        "./static/js/2.9d05bfa1.chunk.js.LICENSE.txt",
         "./static/js/main.40f26bdb.chunk.js",
         "./static/js/main.40f26bdb.chunk.js.map",
         "./static/css/main.35e572dd.chunk.css",
