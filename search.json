@@ -1,6 +1,15 @@
 [
   
     {
+      "title"    : "Palindrome detection python script.",
+      "description" : "Palindrome detection using python",
+      "category" : "",
+      "tags"     : "python,, palindrome,, string,, algorithms",
+      "url"      : "/2022/05/25/palindrome-python",
+      "date"     : "2022-05-25 00:00:00 +0530"
+    } ,
+  
+    {
       "title"    : "Education Rant",
       "description" : "How modern education system in india is a disaster.",
       "category" : "",

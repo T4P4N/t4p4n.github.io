@@ -4,13 +4,62 @@
  <title>T4P4N</title>
  <link href="https://t4p4n.github.io/atom.xml" rel="self"/>
  <link href="https://t4p4n.github.io/"/>
- <updated>2022-01-21T18:55:57+05:30</updated>
+ <updated>2022-05-25T23:05:43+05:30</updated>
  <id>https://t4p4n.github.io</id>
  <author>
    <name>Tapan Kashyap</name>
    <email>tapank415@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Palindrome detection python script.</title>
+   <link href="https://t4p4n.github.io/2022/05/25/palindrome-python"/>
+   <updated>2022-05-25T00:00:00+05:30</updated>
+   <id>https://t4p4n.github.io/2022/05/25/palindrome-python</id>
+   <content type="html">&lt;h1 id=&quot;rotavator&quot;&gt;Rotavator&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;https://img2.exportersindia.com/product_images/bc-full/dir_10/289726/rotavator-1512462441-3497789.jpeg&quot; alt=&quot;Rotavator&quot; title=&quot;a rotavator&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;palindrome-what-is-it-&quot;&gt;Palindrome? What is it !?&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Its just a fancy term for saying something like this:&lt;/li&gt;
+  &lt;li&gt;string/integer matches to their reverse.&lt;/li&gt;
+  &lt;li&gt;Example: POP equals to POP(reverse of pop)&lt;/li&gt;
+  &lt;li&gt;Another example: madam equals to madam(reverse of madam)&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Yet another example: Rotavator equals to rotvatoR(reverse of rotavator)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;non-examples aka false statements:&lt;/li&gt;
+  &lt;li&gt;“Hello world” equals to “dlrow olleH”&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;“definetly not” equals to “ton yltenifed”&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Python code for this type of program
+```
+data = input(“Enter something: “)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;def is_palindrome(data):
+    reverse = data[::-1]
+    if data == reverse:
+        print(“Yes”)
+        return True
+    print(“Nope”)
+    return False&lt;/p&gt;
+
+&lt;p&gt;is_palindrome(data)
+```&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;suggested improvements:&lt;/li&gt;
+  &lt;li&gt;we can use manual function for string reversal&lt;/li&gt;
+  &lt;li&gt;instead of using python slicling magic.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;hope-learned-something-today-atleast-i-did-for-sure&quot;&gt;Hope learned something today atleast i did for sure.&lt;/h3&gt;
+&lt;h3 id=&quot;thanks-for-reading-&quot;&gt;Thanks for reading :)&lt;/h3&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>Education Rant</title>
@@ -20,11 +69,11 @@
    <content type="html">&lt;h2 id=&quot;problems-or-what--why&quot;&gt;Problems or (What &amp;amp; Why?)??&lt;/h2&gt;
 &lt;h3 id=&quot;why-people-are-chasing-success-what-do-they-mean-by-success-is-financial-success-is-everything&quot;&gt;Why people are chasing success? What do they mean by success? is financial success is everything?&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;As of now in 2021's India Most people think success is getting a govt. job &amp;amp; that's it!
+  &lt;li&gt;As of now in 2021&apos;s India Most people think success is getting a govt. job &amp;amp; that&apos;s it!
 But I dont think so? is govt job is keep up to everything want in life? No, its just a secure job
 while nothing is permanent in this world, they think are settled, but in real life, nobody gets settled
 after getting, we gotta repeat same things almost daily, and repetition is equal to boredom.&lt;/li&gt;
-  &lt;li&gt;From my perespective i think life is about balacing all aspects of human a beings' life,
+  &lt;li&gt;From my perespective i think life is about balacing all aspects of human a beings&apos; life,
 I mean keeping everything balanced from work life to social life, childhood to parenthood, physical health to mental health 
 everything needs to balanced, While our education system only teachs about how to get a job, not how to live a life.&lt;/li&gt;
   &lt;li&gt;Anyways here are some problems that i faced/found in our current indian education system while i was studying commerce from school &amp;amp;  college.&lt;/li&gt;
@@ -48,7 +97,7 @@ everything needs to balanced, While our education system only teachs about how t
 &lt;h3 id=&quot;grade-system-to-test-student-ablilities-yikes&quot;&gt;Grade system, to test student ablilities (Yikes),&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;Cause we never know how much a student knows about something without testing him/her in a real world scenario.&lt;/li&gt;
-  &lt;li&gt;Discussions/Debate/Interviews/Internships are good way to test a students' abilities.&lt;/li&gt;
+  &lt;li&gt;Discussions/Debate/Interviews/Internships are good way to test a students&apos; abilities.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;real-world-financial-education&quot;&gt;Real world financial education&lt;/h2&gt;
