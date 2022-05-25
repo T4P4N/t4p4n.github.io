@@ -4,7 +4,7 @@
  <title>T4P4N</title>
  <link href="https://t4p4n.github.io/atom.xml" rel="self"/>
  <link href="https://t4p4n.github.io/"/>
- <updated>2022-05-25T23:05:43+05:30</updated>
+ <updated>2022-05-25T23:16:01+05:30</updated>
  <id>https://t4p4n.github.io</id>
  <author>
    <name>Tapan Kashyap</name>
@@ -13,11 +13,11 @@
 
  
  <entry>
-   <title>Palindrome detection python script.</title>
+   <title>Palindrome !?</title>
    <link href="https://t4p4n.github.io/2022/05/25/palindrome-python"/>
    <updated>2022-05-25T00:00:00+05:30</updated>
    <id>https://t4p4n.github.io/2022/05/25/palindrome-python</id>
-   <content type="html">&lt;h1 id=&quot;rotavator&quot;&gt;Rotavator&lt;/h1&gt;
+   <content type="html">&lt;h2 id=&quot;rotavator&quot;&gt;Rotavator&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;https://img2.exportersindia.com/product_images/bc-full/dir_10/289726/rotavator-1512462441-3497789.jpeg&quot; alt=&quot;Rotavator&quot; title=&quot;a rotavator&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;palindrome-what-is-it-&quot;&gt;Palindrome? What is it !?&lt;/h2&gt;
@@ -34,28 +34,29 @@
   &lt;li&gt;
     &lt;p&gt;“definetly not” equals to “ton yltenifed”&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;Python code for this type of program
-```
-data = input(“Enter something: “)&lt;/li&gt;
+  &lt;li&gt;Python code for this type of program&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;def is_palindrome(data):
-    reverse = data[::-1]
-    if data == reverse:
-        print(“Yes”)
-        return True
-    print(“Nope”)
-    return False&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Enter something: &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 
-&lt;p&gt;is_palindrome(data)
-```&lt;/p&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;is_palindrome&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;reverse&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[::&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reverse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Yes&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Nope&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;is_palindrome&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
 &lt;ul&gt;
   &lt;li&gt;suggested improvements:&lt;/li&gt;
   &lt;li&gt;we can use manual function for string reversal&lt;/li&gt;
   &lt;li&gt;instead of using python slicling magic.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;hope-learned-something-today-atleast-i-did-for-sure&quot;&gt;Hope learned something today atleast i did for sure.&lt;/h3&gt;
+&lt;h3 id=&quot;hope-you-learned-something-today-atleast-i-did-for-sure&quot;&gt;Hope you learned something today atleast i did for sure.&lt;/h3&gt;
 &lt;h3 id=&quot;thanks-for-reading-&quot;&gt;Thanks for reading :)&lt;/h3&gt;
 
 </content>
