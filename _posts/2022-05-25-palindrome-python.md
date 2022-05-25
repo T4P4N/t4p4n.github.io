@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Palindrome detection python script.
+title: Palindrome !?
 description: Palindrome detection using python
 summary: Downfall of indian education system after the independence
 tags: python, palindrome, string, algorithms
 ---
-# Rotavator
+## Rotavator
 ![Rotavator](https://img2.exportersindia.com/product_images/bc-full/dir_10/289726/rotavator-1512462441-3497789.jpeg "a rotavator")
 
 ## Palindrome? What is it !?
@@ -22,7 +22,8 @@ tags: python, palindrome, string, algorithms
 
 
 - Python code for this type of program
-```
+
+```python
 data = input("Enter something: ")
 
 def is_palindrome(data):
@@ -35,10 +36,12 @@ def is_palindrome(data):
 
 is_palindrome(data)
 ```
+
+
 - suggested improvements:
 - we can use manual function for string reversal 
 - instead of using python slicling magic.
 
-### Hope learned something today atleast i did for sure.
+### Hope you learned something today atleast i did for sure.
 ### Thanks for reading :)
 
