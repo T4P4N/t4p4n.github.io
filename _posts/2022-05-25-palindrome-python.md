@@ -2,8 +2,8 @@
 layout: post
 title: Palindrome !?
 description: Palindrome detection using python
-summary: Downfall of indian education system after the independence
-tags: python, palindrome, string, algorithms
+summary: Palindrome simply reverse of string/numbers matches to thier orignal form.
+tags: palindrome, detection, string, algorithms,
 ---
 ## Rotavator
 ![Rotavator](https://img2.exportersindia.com/product_images/bc-full/dir_10/289726/rotavator-1512462441-3497789.jpeg "a rotavator")
