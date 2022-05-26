@@ -17,6 +17,30 @@
 "items": [
     
         {
+            "id": "https://t4p4n.github.io/2022/05/26/anagram-detection",
+            "title": "Anagrams !?",
+            "summary": "Anagrams detection using python",
+            "content_text": "What is it !?  Its just a fancy term for saying:  letters from strings matches to letters of other string  Some examples:  seat eats  heart earth  shit hits  skin sink  altitude latitude  Python code for this type of programdef is_anagram(s1, s2):    s1=s1.replace(\" \", \"\").lower()    s2=s2.replace(\" \", \"\").lower()    if sorted(s1) == sorted(s2):        print(\"Yes\")    else:        print(\"Nope\")s1=input(\"&gt; \")s2=input(\"&gt; \")External Links:  AmbigramsThanks for reading :)",
+            "content_html": "<p><img src=\"https://upload.wikimedia.org/wikipedia/commons/3/33/Anagram_Listen_%3D_Silent.gif\" alt=\"Listen\" /></p><h2 id=\"what-is-it-\">What is it !?</h2><ul>  <li>Its just a fancy term for saying:</li>  <li>letters from strings matches to letters of other string</li>  <li>Some examples:</li>  <li>seat eats</li>  <li>heart earth</li>  <li>shit hits</li>  <li>skin sink</li>  <li>altitude latitude</li>  <li>Python code for this type of program</li></ul><div class=\"language-python highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"k\">def</span> <span class=\"nf\">is_anagram</span><span class=\"p\">(</span><span class=\"n\">s1</span><span class=\"p\">,</span> <span class=\"n\">s2</span><span class=\"p\">):</span>    <span class=\"n\">s1</span><span class=\"o\">=</span><span class=\"n\">s1</span><span class=\"p\">.</span><span class=\"n\">replace</span><span class=\"p\">(</span><span class=\"s\">\" \"</span><span class=\"p\">,</span> <span class=\"s\">\"\"</span><span class=\"p\">).</span><span class=\"n\">lower</span><span class=\"p\">()</span>    <span class=\"n\">s2</span><span class=\"o\">=</span><span class=\"n\">s2</span><span class=\"p\">.</span><span class=\"n\">replace</span><span class=\"p\">(</span><span class=\"s\">\" \"</span><span class=\"p\">,</span> <span class=\"s\">\"\"</span><span class=\"p\">).</span><span class=\"n\">lower</span><span class=\"p\">()</span>    <span class=\"k\">if</span> <span class=\"nb\">sorted</span><span class=\"p\">(</span><span class=\"n\">s1</span><span class=\"p\">)</span> <span class=\"o\">==</span> <span class=\"nb\">sorted</span><span class=\"p\">(</span><span class=\"n\">s2</span><span class=\"p\">):</span>        <span class=\"k\">print</span><span class=\"p\">(</span><span class=\"s\">\"Yes\"</span><span class=\"p\">)</span>    <span class=\"k\">else</span><span class=\"p\">:</span>        <span class=\"k\">print</span><span class=\"p\">(</span><span class=\"s\">\"Nope\"</span><span class=\"p\">)</span><span class=\"n\">s1</span><span class=\"o\">=</span><span class=\"nb\">input</span><span class=\"p\">(</span><span class=\"s\">\"&gt; \"</span><span class=\"p\">)</span><span class=\"n\">s2</span><span class=\"o\">=</span><span class=\"nb\">input</span><span class=\"p\">(</span><span class=\"s\">\"&gt; \"</span><span class=\"p\">)</span></code></pre></div></div><h4 id=\"external-links\">External Links:</h4><ul>  <li><a href=\"https://en.wikipedia.org/wiki/Ambigram\">Ambigrams</a></li></ul><h3 id=\"thanks-for-reading-\">Thanks for reading :)</h3>",
+            "url": "https://t4p4n.github.io/2022/05/26/anagram-detection",
+            
+            
+            
+            "tags": ["anagram,","string,","algorithms"],
+            
+            "date_published": "2022-05-26T00:00:00+05:30",
+            "date_modified": "2022-05-26T00:00:00+05:30",
+            
+                "author":  {
+                "name": "Tapan Kashyap",
+                "url": null,
+                "avatar": null
+                }
+                
+            
+        },
+    
+        {
             "id": "https://t4p4n.github.io/2022/05/25/palindrome-python",
             "title": "Palindrome !?",
             "summary": "Palindrome detection using python",
@@ -26,7 +50,7 @@
             
             
             
-            "tags": ["python,","palindrome,","string,","algorithms"],
+            "tags": ["palindrome,","detection,","string,","algorithms,"],
             
             "date_published": "2022-05-25T00:00:00+05:30",
             "date_modified": "2022-05-25T00:00:00+05:30",

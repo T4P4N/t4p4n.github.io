@@ -1,10 +1,19 @@
 [
   
     {
+      "title"    : "Anagrams !?",
+      "description" : "Anagrams detection using python",
+      "category" : "",
+      "tags"     : "anagram,, string,, algorithms",
+      "url"      : "/2022/05/26/anagram-detection",
+      "date"     : "2022-05-26 00:00:00 +0530"
+    } ,
+  
+    {
       "title"    : "Palindrome !?",
       "description" : "Palindrome detection using python",
       "category" : "",
-      "tags"     : "python,, palindrome,, string,, algorithms",
+      "tags"     : "palindrome,, detection,, string,, algorithms,",
       "url"      : "/2022/05/25/palindrome-python",
       "date"     : "2022-05-25 00:00:00 +0530"
     } ,
