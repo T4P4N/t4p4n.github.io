@@ -1,6 +1,15 @@
 [
   
     {
+      "title"    : "Reverse a Array",
+      "description" : "Reverse a array of given items",
+      "category" : "",
+      "tags"     : "reverse, array,, array,, reverse,, algorithms",
+      "url"      : "/2022/05/30/reverse-array",
+      "date"     : "2022-05-30 00:00:00 +0530"
+    } ,
+  
+    {
       "title"    : "FizzBuzz",
       "description" : "Implementing fizzbuzz using python",
       "category" : "",

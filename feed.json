@@ -17,6 +17,30 @@
 "items": [
     
         {
+            "id": "https://t4p4n.github.io/2022/05/30/reverse-array",
+            "title": "Reverse a Array",
+            "summary": "Reverse a array of given items",
+            "content_text": "def reverse_array(arr):\ti, j = 0, len(arr) - 1\twhile i &lt; j:\t\tarr[i], arr[j] = arr[j], arr[i]\t\ti += 1\t\tj -= 1\treturn arrarr = [0,1,2,3,4,5,6,7,8,9,10]reverse_arr(arr)# [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]  Code is fairly simple to understand give it a try  Else just Google it.Thanks for reading :)",
+            "content_html": "<div class=\"language-python highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"k\">def</span> <span class=\"nf\">reverse_array</span><span class=\"p\">(</span><span class=\"n\">arr</span><span class=\"p\">):</span>\t<span class=\"n\">i</span><span class=\"p\">,</span> <span class=\"n\">j</span> <span class=\"o\">=</span> <span class=\"mi\">0</span><span class=\"p\">,</span> <span class=\"nb\">len</span><span class=\"p\">(</span><span class=\"n\">arr</span><span class=\"p\">)</span> <span class=\"o\">-</span> <span class=\"mi\">1</span>\t<span class=\"k\">while</span> <span class=\"n\">i</span> <span class=\"o\">&lt;</span> <span class=\"n\">j</span><span class=\"p\">:</span>\t\t<span class=\"n\">arr</span><span class=\"p\">[</span><span class=\"n\">i</span><span class=\"p\">],</span> <span class=\"n\">arr</span><span class=\"p\">[</span><span class=\"n\">j</span><span class=\"p\">]</span> <span class=\"o\">=</span> <span class=\"n\">arr</span><span class=\"p\">[</span><span class=\"n\">j</span><span class=\"p\">],</span> <span class=\"n\">arr</span><span class=\"p\">[</span><span class=\"n\">i</span><span class=\"p\">]</span>\t\t<span class=\"n\">i</span> <span class=\"o\">+=</span> <span class=\"mi\">1</span>\t\t<span class=\"n\">j</span> <span class=\"o\">-=</span> <span class=\"mi\">1</span>\t<span class=\"k\">return</span> <span class=\"n\">arr</span><span class=\"n\">arr</span> <span class=\"o\">=</span> <span class=\"p\">[</span><span class=\"mi\">0</span><span class=\"p\">,</span><span class=\"mi\">1</span><span class=\"p\">,</span><span class=\"mi\">2</span><span class=\"p\">,</span><span class=\"mi\">3</span><span class=\"p\">,</span><span class=\"mi\">4</span><span class=\"p\">,</span><span class=\"mi\">5</span><span class=\"p\">,</span><span class=\"mi\">6</span><span class=\"p\">,</span><span class=\"mi\">7</span><span class=\"p\">,</span><span class=\"mi\">8</span><span class=\"p\">,</span><span class=\"mi\">9</span><span class=\"p\">,</span><span class=\"mi\">10</span><span class=\"p\">]</span><span class=\"n\">reverse_arr</span><span class=\"p\">(</span><span class=\"n\">arr</span><span class=\"p\">)</span><span class=\"c1\"># [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]</span></code></pre></div></div><ul>  <li>Code is fairly simple to understand give it a try</li>  <li>Else just Google it.</li></ul><h5 id=\"thanks-for-reading-\">Thanks for reading :)</h5>",
+            "url": "https://t4p4n.github.io/2022/05/30/reverse-array",
+            
+            
+            
+            "tags": ["reverse","array,","array,","reverse,","algorithms"],
+            
+            "date_published": "2022-05-30T00:00:00+05:30",
+            "date_modified": "2022-05-30T00:00:00+05:30",
+            
+                "author":  {
+                "name": "Tapan Kashyap",
+                "url": null,
+                "avatar": null
+                }
+                
+            
+        },
+    
+        {
             "id": "https://t4p4n.github.io/2022/05/29/fizzbuzz",
             "title": "FizzBuzz",
             "summary": "Implementing fizzbuzz using python",
