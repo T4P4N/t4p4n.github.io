@@ -4,13 +4,60 @@
  <title>T4P4N</title>
  <link href="https://t4p4n.github.io/atom.xml" rel="self"/>
  <link href="https://t4p4n.github.io/"/>
- <updated>2022-07-02T19:39:50+05:30</updated>
+ <updated>2022-08-14T17:52:39+05:30</updated>
  <id>https://t4p4n.github.io</id>
  <author>
    <name>Tapan Kashyap</name>
    <email>tapank415@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>short term goals are important (rails)</title>
+   <link href="https://t4p4n.github.io/2022/08/13/short-term-goals"/>
+   <updated>2022-08-13T00:00:00+05:30</updated>
+   <id>https://t4p4n.github.io/2022/08/13/short-term-goals</id>
+   <content type="html">&lt;h2 id=&quot;short-term-goals-rails&quot;&gt;Short Term Goals!!!!! (Rails)&lt;/h2&gt;
+&lt;p&gt;Let’s start by defining what short term goal is
+its a achievable in short duration i.e within days or months for example learning ruby on rails&lt;/p&gt;
+
+&lt;h3 id=&quot;create&quot;&gt;Create&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;like something a todo/blog app just to get a hint of how things work in rails&lt;/li&gt;
+  &lt;li&gt;but only do this you haven’t work with MVC architecture before.&lt;/li&gt;
+  &lt;li&gt;Otherwise build something that uses some more framework specific features like rails helpers &amp;amp; concerns or other features specific to your project.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;modify&quot;&gt;Modify&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Read Code &amp;amp; Do incremental changes&lt;/li&gt;
+  &lt;li&gt;Take notes with pen &amp;amp; paper, also try drawing relationship b/w two or models.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;observe&quot;&gt;Observe&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Inspect generated migrations &amp;amp; schema&lt;/li&gt;
+  &lt;li&gt;Inspect db after migrations &amp;amp; also after seeding&lt;/li&gt;
+  &lt;li&gt;Read server logs &amp;amp; add print/puts statements in controllers it will give you a more clear idea about things are working internally.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;watch--read&quot;&gt;Watch &amp;amp; Read&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Watch videos about rails on YT checklout deanin , super rails, jesus castello railscasts etc.&lt;/li&gt;
+  &lt;li&gt;Read blogs, checkout saeloun, big binary, Ruby Guides, also checkout learn rails 6 by adam notodikromo if you’re into books(like me)&lt;/li&gt;
+  &lt;li&gt;Read rails guide.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;write--debug&quot;&gt;Write &amp;amp; Debug&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;don’t be afraid to mess things up&lt;/li&gt;
+  &lt;li&gt;but if you did made a mess &amp;amp; it works&lt;/li&gt;
+  &lt;li&gt;then its responsiblity to clean it up&lt;/li&gt;
+  &lt;li&gt;PS: you can write spaghetti code but also refactor it as much as possible.&lt;/li&gt;
+  &lt;li&gt;Do trial &amp;amp; error very important&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Reverse a Array</title>
