@@ -4,7 +4,7 @@
  <title>T4P4N</title>
  <link href="https://t4p4n.github.io/atom.xml" rel="self"/>
  <link href="https://t4p4n.github.io/"/>
- <updated>2022-08-14T17:52:39+05:30</updated>
+ <updated>2022-08-15T11:23:15+05:30</updated>
  <id>https://t4p4n.github.io</id>
  <author>
    <name>Tapan Kashyap</name>
@@ -13,13 +13,12 @@
 
  
  <entry>
-   <title>short term goals are important (rails)</title>
+   <title>Short term goals are important (rails)</title>
    <link href="https://t4p4n.github.io/2022/08/13/short-term-goals"/>
    <updated>2022-08-13T00:00:00+05:30</updated>
    <id>https://t4p4n.github.io/2022/08/13/short-term-goals</id>
-   <content type="html">&lt;h2 id=&quot;short-term-goals-rails&quot;&gt;Short Term Goals!!!!! (Rails)&lt;/h2&gt;
-&lt;p&gt;Let’s start by defining what short term goal is
-its a achievable in short duration i.e within days or months for example learning ruby on rails&lt;/p&gt;
+   <content type="html">&lt;p&gt;Let’s start by defining what short term goal is:
+Its a achievable in short duration i.e within days or months for example learning ruby on rails&lt;/p&gt;
 
 &lt;h3 id=&quot;create&quot;&gt;Create&lt;/h3&gt;
 &lt;ul&gt;
