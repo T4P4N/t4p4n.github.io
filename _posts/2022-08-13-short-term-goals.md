@@ -7,13 +7,12 @@ tags: [goals, rails, ruby, ror, ruby on rails]
 description:
 summary:
 #permalink:
-title: 'short term goals are important (rails)'
+title: 'Short term goals are important (rails)'
 ---
 
 
-## Short Term Goals!!!!! (Rails)
-Let's start by defining what short term goal is
-its a achievable in short duration i.e within days or months for example learning ruby on rails
+Let's start by defining what short term goal is:
+Its a achievable in short duration i.e within days or months for example learning ruby on rails
 
 ### Create
 - like something a todo/blog app just to get a hint of how things work in rails
