@@ -4,7 +4,7 @@
  <title>T4P4N</title>
  <link href="https://t4p4n.github.io/atom.xml" rel="self"/>
  <link href="https://t4p4n.github.io/"/>
- <updated>2022-08-20T11:52:43+05:30</updated>
+ <updated>2022-08-20T20:47:14+05:30</updated>
  <id>https://t4p4n.github.io</id>
  <author>
    <name>Tapan Kashyap</name>
@@ -21,9 +21,16 @@
 &lt;p&gt;The default form helper for checkbox gives us weird mess of options to work with  &lt;br /&gt;
 And i found them very very annoying to a beginner like me, the issue  &lt;br /&gt;
 is when you submit a form with your checked checkboxes, they goto server as&lt;br /&gt;
-usual params (with “0” and “1”, definetly not good for html we gonna need render next page) &lt;br /&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{&quot;is_mad&quot;=&amp;gt;&quot;1&quot;, &quot;q&quot;=&amp;gt;&quot;rails is fcked up&quot;, &quot;commit&quot;=&amp;gt;&quot;Search&quot;}&lt;/code&gt;&lt;br /&gt;
-but when you render the you try with input checkbox value=params[:is_mad] and you get 1&lt;br /&gt;
+usual params (with “0” and “1”, definetly not good for html we gonna need render next page)&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;s2&quot;&gt;&quot;is_mad&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
+	&lt;span class=&quot;s2&quot;&gt;&quot;q&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;rails is fcked up&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
+	&lt;span class=&quot;s2&quot;&gt;&quot;commit&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Search&quot;&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;but when you render the you try with input checkbox &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;value=params[:is_mad]&lt;/code&gt; and you get 1&lt;br /&gt;
 which doesnt represents the checked state of checkbox so here’s the solution&lt;/p&gt;
 
 &lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;%= form.check_box :is_mad, checked: true ? params[:is_mad].to_i =&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;bs-sucks&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&amp;gt;&lt;/span&gt;
