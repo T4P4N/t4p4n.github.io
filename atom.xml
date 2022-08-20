@@ -4,7 +4,7 @@
  <title>T4P4N</title>
  <link href="https://t4p4n.github.io/atom.xml" rel="self"/>
  <link href="https://t4p4n.github.io/"/>
- <updated>2022-08-20T20:49:39+05:30</updated>
+ <updated>2022-08-20T20:51:15+05:30</updated>
  <id>https://t4p4n.github.io</id>
  <author>
    <name>Tapan Kashyap</name>
@@ -30,7 +30,12 @@ usual params (with “0” and “1”, definetly not good for html we gonna nee
 	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;but when you render the you try with input checkbox &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;value=params[:is_mad]&lt;/code&gt; and you get 1&lt;br /&gt;
+&lt;p&gt;but when you render the you try with input checkbox&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:is_mad&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;and you get 1&lt;br /&gt;
 which doesnt represents the checked state of checkbox so here’s the solution&lt;/p&gt;
 
 &lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;%= form.check_box :is_mad, checked: true ? params[:is_mad].to_i =&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;bs-sucks&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&amp;gt;&lt;/span&gt;
