@@ -20,7 +20,13 @@ usual params (with "0" and "1", definetly not good for html we gonna need render
 	}
 ```  
   
-but when you render the you try with input checkbox ```value=params[:is_mad]``` and you get 1  
+but when you render the you try with input checkbox 
+
+```ruby 
+value=params[:is_mad]
+```  
+
+and you get 1  
 which doesnt represents the checked state of checkbox so here's the solution  
 
 ```ruby
