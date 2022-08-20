@@ -4,13 +4,43 @@
  <title>T4P4N</title>
  <link href="https://t4p4n.github.io/atom.xml" rel="self"/>
  <link href="https://t4p4n.github.io/"/>
- <updated>2022-08-18T13:29:46+05:30</updated>
+ <updated>2022-08-20T11:52:43+05:30</updated>
  <id>https://t4p4n.github.io</id>
  <author>
    <name>Tapan Kashyap</name>
    <email>tapank415@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Persistent Checkbox Rails</title>
+   <link href="https://t4p4n.github.io/2022/08/20/rails-persistent-checkbox"/>
+   <updated>2022-08-20T00:00:00+05:30</updated>
+   <id>https://t4p4n.github.io/2022/08/20/rails-persistent-checkbox</id>
+   <content type="html">&lt;h3 id=&quot;whats-the-problem&quot;&gt;Whats the problem&lt;/h3&gt;
+&lt;p&gt;The default form helper for checkbox gives us weird mess of options to work with  &lt;br /&gt;
+And i found them very very annoying to a beginner like me, the issue  &lt;br /&gt;
+is when you submit a form with your checked checkboxes, they goto server as&lt;br /&gt;
+usual params (with “0” and “1”, definetly not good for html we gonna need render next page) &lt;br /&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{&quot;is_mad&quot;=&amp;gt;&quot;1&quot;, &quot;q&quot;=&amp;gt;&quot;rails is fcked up&quot;, &quot;commit&quot;=&amp;gt;&quot;Search&quot;}&lt;/code&gt;&lt;br /&gt;
+but when you render the you try with input checkbox value=params[:is_mad] and you get 1&lt;br /&gt;
+which doesnt represents the checked state of checkbox so here’s the solution&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;%= form.check_box :is_mad, checked: true ? params[:is_mad].to_i =&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;bs-sucks&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;And this works as expected you get desired state of checkbox, entered by user.&lt;/li&gt;
+  &lt;li&gt;Dunno why this isn’t posted anywhere on the internet all i see broken checkboxs&lt;/li&gt;
+  &lt;li&gt;Examples:&lt;/li&gt;
+  &lt;li&gt;https://betterprogramming.pub/build-a-smart-filter-for-your-rails-5-application-using-simple-form-and-acts-as-tattable-afac128e4159&lt;/li&gt;
+  &lt;li&gt;https://www.reddit.com/r/rails/comments/c201oc/issue_with_using_checkboxes_and_retaining_checked/&lt;/li&gt;
+  &lt;li&gt;Anyways! Bye Bye&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;thanks-for-reading-&quot;&gt;Thanks for reading :)&lt;/h5&gt;
+</content>
+ </entry>
  
  <entry>
    <title>A Good Day</title>
