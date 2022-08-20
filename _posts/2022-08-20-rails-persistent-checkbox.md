@@ -11,15 +11,15 @@ The default form helper for checkbox gives us weird mess of options to work with
 And i found them very very annoying to a beginner like me, the issue    
 is when you submit a form with your checked checkboxes, they goto server as  
 usual params (with "0" and "1", definetly not good for html we gonna need render next page)   
-
+  
 ```ruby
 {
 	"is_mad"=>"1", 
 	"q"=>"rails is fcked up", 
 	"commit"=>"Search"
 	}
-```
-
+```  
+  
 but when you render the you try with input checkbox ```value=params[:is_mad]``` and you get 1  
 which doesnt represents the checked state of checkbox so here's the solution  
 
