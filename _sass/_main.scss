@@ -10,6 +10,7 @@
 
 html {
 	font-size: 15px;
+  -webkit-tap-highlight-color: transparent;
 }
 
 #theme-toggle {
@@ -34,20 +35,30 @@ html {
 
 html,
 html[data-theme="light"] {
-	--text-font: 'Exo 2';
+	--text-font: 'Inter';
 	--source-code-font: Source Code Pro;
 	--very-light-text-color: rgb(222, 222, 222);
-	--light-text-color: rgb(89, 183, 255);
+	--light-text-color: rgb(255, 148, 166);
 	--medium-text-color: #555;
 	--main-text-color: #333;
 	--highlight-text-color: hsla(0, 0%, 25%, 0.336);
 	--dark-text-color: #393e46;
-	--link-color: rgb(50, 87, 209);
+	--link-color: rgb(209, 50, 76);
 	--code-bg-color: rgb(245, 245, 245);
   --flag-point-color: #ffffff;
-	background-color: rgb(255, 255, 255);
-
-	
+	background-color: rgb(255, 240, 240);
+	--scroll-bar-bg: rgb(128, 128, 128);
+	--scroll-bar-track: rgb(161, 161, 161);
+	--scroll-bar-thumb: rgb(170, 170, 170);
+  --project-card-hover: rgb(248, 230, 230);
+  
+  .time-wrapper {
+    .time {
+      display: inline-block;
+      padding: 4px 6px;
+      background-color: rgb(223, 223, 223);
+    }
+  }     
 
 	#theme-toggle div {
 		position: relative;
@@ -98,18 +109,23 @@ html[data-theme="light"] {
 }
 
 html[data-theme="dark"] {
-	--text-font: 'Exo 2';
+	--text-font: 'Inter';
 	--source-code-font: Source Code Pro;
 	--very-light-text-color: #EEE;
-	--light-text-color: #c4bbf0;
+	--light-text-color: #f0bbbb;
 	--medium-text-color: #52057b;
 	--main-text-color: #EAEAEA;
 	--highlight-text-color: #42424242;
 	--dark-text-color: rgb(36, 38, 42);
-	--link-color: rgb(119, 151, 255);
+	--link-color: rgb(255, 119, 119);
 	--code-bg-color: rgb(36, 38, 42);
 	background-color: rgb(19, 20, 24);
   --flag-point-color: #131418;
+  --scroll-bar-bg: rgb(53, 53, 53);
+	--scroll-bar-track: rgb(26, 26, 26);
+	--scroll-bar-thumb: rgb(56, 56, 56);
+  --project-card-hover: rgb(31, 31, 31);
+
 
   .time-wrapper {
     .time {
@@ -130,6 +146,7 @@ html[data-theme="dark"] {
 		transition: all 0.45s ease 0s;
 		overflow: visible;
 		box-shadow: none;
+    
 
 		&::before {
 			content: "";
@@ -180,12 +197,11 @@ a {
 }
 
 .post p {
-	margin: 1rem 0;
+	padding-block: 0.5em;
 }
 
 .meta {
-	margin: 1.4rem 0;
-
+	margin: 1.2rem 0;
 }
 
 code,
@@ -199,7 +215,7 @@ code {
 	font-family: var(--source-code-font), monospace;
 	margin: unset;
 	padding: 0.1rem;
-	color: var(--highlight-text-color);
+	color: var(--light-text-color);
 }
 
 pre code {
@@ -266,7 +282,6 @@ h1 {
 	text-transform: uppercase;
 	font-size: 2rem;
 	font-weight: bold;
-	margin-bottom: 1.5rem;
 }
 
 h2,
@@ -274,8 +289,9 @@ h3,
 h4,
 h5 {
 	font-weight: bold;
-	margin-bottom: 1.5rem;
-	font-size: 2rem;
+	margin-block: 0;
+	margin-inline: 0;
+	font-size: 5rem;
 }
 
 h2 {
@@ -436,7 +452,7 @@ main {
 	}
 
 	main {
-		padding: 0 2rem;
+		padding: 0 1rem;
 	}
 
 }
@@ -472,6 +488,12 @@ figcaption {
     font-size: 1.120rem;
     margin-bottom: 0.5rem;
     padding: 0.5em;
+    &:hover {
+      background: var(--project-card-hover);
+    }
+    a {
+      font-weight: bold;
+    }
     p {
       margin-top: -5px;
     }
@@ -765,7 +787,28 @@ $link-color: var(--link-color);
   }
 }
 
-.direction-l .flag:before,
+.direction-l .flag:before {
+  position: absolute;
+  top: 60%;
+  right: -42px;
+  content: ' ';
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin-top: -10px;
+  background: #fff;
+  border-radius: 10px;
+  border: 4px solid $link-color;
+  z-index: 10;
+  @media(max-width: 860px) {
+    position: absolute;
+    top: -14px;
+    left: 47%;
+    content: ' ';
+    display: block;
+    margin-left: 0;
+  }
+}
 .direction-r .flag:before {
   position: absolute;
   top: 60%;
@@ -781,11 +824,11 @@ $link-color: var(--link-color);
   z-index: 10;
   @media(max-width: 860px) {
     position: absolute;
-    top: -30px;
-    left: 52%;
+    top: -14px;
+    left: 46%;
     content: ' ';
     display: block;
-    margin-left: -10px;
+    margin-left: 0;
   }
 }
 
@@ -825,6 +868,7 @@ $link-color: var(--link-color);
     position: relative;
     margin: 1em 1em 0 1em;
     padding: 1em;
+    border-radius: 10px;
     background: var(--code-bg-color);
     box-shadow: 0 0 1px rgba(0,0,0,0.20);
     z-index: 15;
@@ -870,4 +914,21 @@ $link-color: var(--link-color);
   gap: 1em;
   align-items: center;
   justify-content: flex-start;
+}
+
+
+body::-webkit-scrollbar {
+  width: 0.5em;
+  margin-left: 2px;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px var(--scroll-bar-track);
+}
+
+body::-webkit-scrollbar-thumb {
+  margin-left: 2px;
+  border-radius: 10px;
+  background-color: var(--scroll-bar-bg);
+  outline: 1px solid var(--scroll-bar-thumb);
 }

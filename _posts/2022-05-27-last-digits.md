@@ -3,7 +3,7 @@ layout: post
 title: Last digit !!!??
 description: Last Digit
 summary: find the last one digit in a string.
-tags: last_digits, string, algorithms
+tags: [ last_digits, string, algorithms ]
 ---
 ## Get last digit from a string
 

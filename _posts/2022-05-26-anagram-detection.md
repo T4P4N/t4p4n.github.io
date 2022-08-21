@@ -3,7 +3,7 @@ layout: post
 title: Anagrams !?
 description: Anagrams detection using python
 summary: Find if two strings are anagram.
-tags: anagram, string, algorithms
+tags: [ anagram, string, algorithms ]
 ---
 
 ![Listen](https://upload.wikimedia.org/wikipedia/commons/3/33/Anagram_Listen_%3D_Silent.gif)

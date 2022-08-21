@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: [goals, rails, ruby, ror, ruby on rails]
+tags: [ goals, rails, ruby, ror, ruby on rails ]
 #date: 2019-06-25 13:14:15
 #excerpt: ''
 #image: 'BASEURL/assets/blog/img/.png'

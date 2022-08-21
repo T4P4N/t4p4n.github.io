@@ -3,7 +3,7 @@ layout: post
 title: Caesar Cipher
 description: Implementing caesar cipher using python 
 summary: Learn how to implement caesar cipher algorithm.
-tags: caesar, cipher, string, algorithms
+tags: [ caesar, cipher, string, algorithms ]
 ---
 [![Siege-alesia-vercingetorix-jules-cesar](https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Siege-alesia-vercingetorix-jules-cesar.jpg/512px-Siege-alesia-vercingetorix-jules-cesar.jpg)](https://commons.wikimedia.org/wiki/File:Siege-alesia-vercingetorix-jules-cesar.jpg "Lionel Royer
 , Public domain, via Wikimedia Commons")

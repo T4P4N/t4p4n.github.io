@@ -3,7 +3,7 @@ layout: post
 title: Education Rant
 description: How modern education system in india is a disaster.
 summary: Downfall of indian education system after the independence
-tags: education rant
+tags: [ education, rant ]
 ---
 
 ## Problems or (What & Why?)??

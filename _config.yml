@@ -1,14 +1,12 @@
 site: My Blog
 title: T4P4N
-greetings: Hello World
+greetings: Hi there!!!
 description: >-
   I'm Tapan Kashyap. Welcome to my personal space on the internet.
 
 lang: en-UK
 timezone: Asia/Kolkata
-# repo: https://github.com/p0wex/Gesko # site repo [optional]
 data-theme: dark # default theme "dark" | "light"
-# discus-identifier: powex # replace with your disqus shortname
 
 author:
   name: Tapan Kashyap
@@ -20,7 +18,8 @@ author:
   email: tapank415@gmail.com # email adress
 
 # Font Settings
-googlewebfonts: family=Exo+2:wght@400;700&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,900
+# googlewebfonts: family=Exo+2:wght@400;700&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,900
+googlewebfonts: family=Inter:wght@200;400;500;600;700;800;900&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,900
 
 # URL settings
 baseurl: ""

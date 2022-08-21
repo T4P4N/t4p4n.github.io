@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: [life, stars, ups and downs, chill, universe]
+tags: [ life, stars, ups and downs, chill, universe ] 
 #date: 2019-06-25 13:14:15
 #excerpt: ''
 #image: 'BASEURL/assets/blog/img/.png'

@@ -3,7 +3,7 @@ layout: post
 title: Reverse a Array
 description: Reverse a array of given items 
 summary: Learn how to reverse array using python.
-tags: reverse array, array, reverse, algorithms
+tags: [ reverse array, array, reverse, algorithms ]
 ---
 ```python
 def reverse_array(arr):
