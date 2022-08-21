@@ -20,13 +20,13 @@
             "id": "https://t4p4n.github.io/2022/08/20/rails-persistent-checkbox",
             "title": "Persistent Checkbox Rails",
             "summary": "Implementing persistent using ruby on rails",
-            "content_text": "Whats the problemThe default form helper for checkbox gives us weird mess of options to work with  And i found them very very annoying to a beginner like me, the issue  is when you submit a form with your checked checkboxes, they goto server asusual params (with “0” and “1”, definetly not good for html we gonna need render next page){\t\"is_mad\"=&gt;\"1\", \t\"q\"=&gt;\"rails is fcked up\", \t\"commit\"=&gt;\"Search\"\t}but when you render the you try with input checkboxvalue=params[:is_mad]and you get 1which doesnt represents the checked state of checkbox so here’s the solution&lt;%= form.check_box :is_mad, checked: true ? params[:is_mad].to_i == 1 : false, class:\"bs-sucks\" %&gt;  And this works as expected you get desired state of checkbox, entered by user.  Dunno why this isn’t posted anywhere on the internet all i see broken checkboxs  Examples:  https://betterprogramming.pub/build-a-smart-filter-for-your-rails-5-application-using-simple-form-and-acts-as-tattable-afac128e4159  https://www.reddit.com/r/rails/comments/c201oc/issue_with_using_checkboxes_and_retaining_checked/  Anyways! Bye ByeThanks for reading :)",
-            "content_html": "<h3 id=\"whats-the-problem\">Whats the problem</h3><p>The default form helper for checkbox gives us weird mess of options to work with  <br />And i found them very very annoying to a beginner like me, the issue  <br />is when you submit a form with your checked checkboxes, they goto server as<br />usual params (with “0” and “1”, definetly not good for html we gonna need render next page)</p><div class=\"language-ruby highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"p\">{</span>\t<span class=\"s2\">\"is_mad\"</span><span class=\"o\">=&gt;</span><span class=\"s2\">\"1\"</span><span class=\"p\">,</span> \t<span class=\"s2\">\"q\"</span><span class=\"o\">=&gt;</span><span class=\"s2\">\"rails is fcked up\"</span><span class=\"p\">,</span> \t<span class=\"s2\">\"commit\"</span><span class=\"o\">=&gt;</span><span class=\"s2\">\"Search\"</span>\t<span class=\"p\">}</span></code></pre></div></div><p>but when you render the you try with input checkbox</p><div class=\"language-ruby highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"n\">value</span><span class=\"o\">=</span><span class=\"n\">params</span><span class=\"p\">[</span><span class=\"ss\">:is_mad</span><span class=\"p\">]</span></code></pre></div></div><p>and you get 1<br />which doesnt represents the checked state of checkbox so here’s the solution</p><div class=\"language-ruby highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"o\">&lt;</span><span class=\"sx\">%= form.check_box :is_mad, checked: true ? params[:is_mad].to_i =</span><span class=\"o\">=</span> <span class=\"mi\">1</span> <span class=\"p\">:</span> <span class=\"kp\">false</span><span class=\"p\">,</span> <span class=\"k\">class</span><span class=\"ss\">:\"bs-sucks\"</span> <span class=\"o\">%&gt;</span></code></pre></div></div><ul>  <li>And this works as expected you get desired state of checkbox, entered by user.</li>  <li>Dunno why this isn’t posted anywhere on the internet all i see broken checkboxs</li>  <li>Examples:</li>  <li>https://betterprogramming.pub/build-a-smart-filter-for-your-rails-5-application-using-simple-form-and-acts-as-tattable-afac128e4159</li>  <li>https://www.reddit.com/r/rails/comments/c201oc/issue_with_using_checkboxes_and_retaining_checked/</li>  <li>Anyways! Bye Bye</li></ul><h5 id=\"thanks-for-reading-\">Thanks for reading :)</h5>",
+            "content_text": "Whats the problemThe default form helper for checkbox gives us weird mess of options to work with  And i found them very very annoying to a beginner like me, the issue  is when you submit a form with your checked checkboxes, they goto server asusual params (with “0” and “1”, definetly not good for html we gonna need render next page){\t\"is_mad\"=&gt;\"1\", \t\"q\"=&gt;\"rails is fcked up\", \t\"commit\"=&gt;\"Search\"\t}but when you render the you try with input checkboxvalue=params[:is_mad]and you get 1which doesnt represents the checked state of checkbox so here’s the solution&lt;%= form.check_box :is_mad, checked: true ? params[:is_mad].to_i == 1 : false, class:\"bs-sucks\" %&gt;  And this works as expected you get desired state of checkbox, entered by user.      Dunno why this isn’t posted anywhere on the internet all i see broken checkboxs    Examples:          Bad Programming Hub      Reddit post      Thanks for reading :)",
+            "content_html": "<h3 id=\"whats-the-problem\">Whats the problem</h3><p>The default form helper for checkbox gives us weird mess of options to work with  <br />And i found them very very annoying to a beginner like me, the issue  <br />is when you submit a form with your checked checkboxes, they goto server as<br />usual params (with “0” and “1”, definetly not good for html we gonna need render next page)</p><div class=\"language-ruby highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"p\">{</span>\t<span class=\"s2\">\"is_mad\"</span><span class=\"o\">=&gt;</span><span class=\"s2\">\"1\"</span><span class=\"p\">,</span> \t<span class=\"s2\">\"q\"</span><span class=\"o\">=&gt;</span><span class=\"s2\">\"rails is fcked up\"</span><span class=\"p\">,</span> \t<span class=\"s2\">\"commit\"</span><span class=\"o\">=&gt;</span><span class=\"s2\">\"Search\"</span>\t<span class=\"p\">}</span></code></pre></div></div><p>but when you render the you try with input checkbox</p><div class=\"language-ruby highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"n\">value</span><span class=\"o\">=</span><span class=\"n\">params</span><span class=\"p\">[</span><span class=\"ss\">:is_mad</span><span class=\"p\">]</span></code></pre></div></div><p>and you get 1<br />which doesnt represents the checked state of checkbox so here’s the solution</p><div class=\"language-ruby highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"o\">&lt;</span><span class=\"sx\">%= form.check_box :is_mad, checked: true ? params[:is_mad].to_i =</span><span class=\"o\">=</span> <span class=\"mi\">1</span> <span class=\"p\">:</span> <span class=\"kp\">false</span><span class=\"p\">,</span> <span class=\"k\">class</span><span class=\"ss\">:\"bs-sucks\"</span> <span class=\"o\">%&gt;</span></code></pre></div></div><ul>  <li>And this works as expected you get desired state of checkbox, entered by user.</li>  <li>    <p>Dunno why this isn’t posted anywhere on the internet all i see broken checkboxs</p>  </li>  <li>Examples:    <ul>      <li><a href=\"https://betterprogramming.pub/build-a-smart-filter-for-your-rails-5-application-using-simple-form-and-acts-as-tattable-afac128e4159\">Bad Programming Hub</a></li>      <li><a href=\"https://www.reddit.com/r/rails/comments/c201oc/issue_with_using_checkboxes_and_retaining_checked/\">Reddit post</a></li>    </ul>  </li></ul><h5 id=\"thanks-for-reading-\">Thanks for reading :)</h5>",
             "url": "https://t4p4n.github.io/2022/08/20/rails-persistent-checkbox",
             
             
             
-            "tags": ["rails,","checkbox,","ruby","on","rails,","ror"],
+            "tags": ["rails","checkbox","ruby on rails","ror"],
             
             "date_published": "2022-08-20T00:00:00+05:30",
             "date_modified": "2022-08-20T00:00:00+05:30",
@@ -98,7 +98,7 @@
             
             
             
-            "tags": ["reverse","array,","array,","reverse,","algorithms"],
+            "tags": ["reverse array","array","reverse","algorithms"],
             
             "date_published": "2022-05-30T00:00:00+05:30",
             "date_modified": "2022-05-30T00:00:00+05:30",
@@ -122,7 +122,7 @@
             
             
             
-            "tags": ["fizzbuzz,","math,","string,","algorithms"],
+            "tags": ["fizzbuzz","math","string","algorithms"],
             
             "date_published": "2022-05-29T00:00:00+05:30",
             "date_modified": "2022-05-29T00:00:00+05:30",
@@ -146,7 +146,7 @@
             
             
             
-            "tags": ["caesar,","cipher,","string,","algorithms"],
+            "tags": ["caesar","cipher","string","algorithms"],
             
             "date_published": "2022-05-28T00:00:00+05:30",
             "date_modified": "2022-05-28T00:00:00+05:30",
@@ -170,7 +170,7 @@
             
             
             
-            "tags": ["last_digits,","string,","algorithms"],
+            "tags": ["last_digits","string","algorithms"],
             
             "date_published": "2022-05-27T00:00:00+05:30",
             "date_modified": "2022-05-27T00:00:00+05:30",
@@ -194,7 +194,7 @@
             
             
             
-            "tags": ["anagram,","string,","algorithms"],
+            "tags": ["anagram","string","algorithms"],
             
             "date_published": "2022-05-26T00:00:00+05:30",
             "date_modified": "2022-05-26T00:00:00+05:30",
@@ -218,7 +218,7 @@
             
             
             
-            "tags": ["palindrome,","detection,","string,","algorithms,"],
+            "tags": ["palindrome","detection","string","algorithms"],
             
             "date_published": "2022-05-25T00:00:00+05:30",
             "date_modified": "2022-05-25T00:00:00+05:30",

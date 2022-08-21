@@ -4,7 +4,7 @@
  <title>T4P4N</title>
  <link href="https://t4p4n.github.io/atom.xml" rel="self"/>
  <link href="https://t4p4n.github.io/"/>
- <updated>2022-08-20T20:51:15+05:30</updated>
+ <updated>2022-08-21T14:10:36+05:30</updated>
  <id>https://t4p4n.github.io</id>
  <author>
    <name>Tapan Kashyap</name>
@@ -43,11 +43,15 @@ which doesnt represents the checked state of checkbox so here’s the solution&l
 
 &lt;ul&gt;
   &lt;li&gt;And this works as expected you get desired state of checkbox, entered by user.&lt;/li&gt;
-  &lt;li&gt;Dunno why this isn’t posted anywhere on the internet all i see broken checkboxs&lt;/li&gt;
-  &lt;li&gt;Examples:&lt;/li&gt;
-  &lt;li&gt;https://betterprogramming.pub/build-a-smart-filter-for-your-rails-5-application-using-simple-form-and-acts-as-tattable-afac128e4159&lt;/li&gt;
-  &lt;li&gt;https://www.reddit.com/r/rails/comments/c201oc/issue_with_using_checkboxes_and_retaining_checked/&lt;/li&gt;
-  &lt;li&gt;Anyways! Bye Bye&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Dunno why this isn’t posted anywhere on the internet all i see broken checkboxs&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Examples:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://betterprogramming.pub/build-a-smart-filter-for-your-rails-5-application-using-simple-form-and-acts-as-tattable-afac128e4159&quot;&gt;Bad Programming Hub&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.reddit.com/r/rails/comments/c201oc/issue_with_using_checkboxes_and_retaining_checked/&quot;&gt;Reddit post&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h5 id=&quot;thanks-for-reading-&quot;&gt;Thanks for reading :)&lt;/h5&gt;

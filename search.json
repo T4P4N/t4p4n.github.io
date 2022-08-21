@@ -4,7 +4,7 @@
       "title"    : "Persistent Checkbox Rails",
       "description" : "Implementing persistent using ruby on rails",
       "category" : "",
-      "tags"     : "rails,, checkbox,, ruby, on, rails,, ror",
+      "tags"     : "rails, checkbox, ruby on rails, ror",
       "url"      : "/2022/08/20/rails-persistent-checkbox",
       "date"     : "2022-08-20 00:00:00 +0530"
     } ,
@@ -31,7 +31,7 @@
       "title"    : "Reverse a Array",
       "description" : "Reverse a array of given items",
       "category" : "",
-      "tags"     : "reverse, array,, array,, reverse,, algorithms",
+      "tags"     : "reverse array, array, reverse, algorithms",
       "url"      : "/2022/05/30/reverse-array",
       "date"     : "2022-05-30 00:00:00 +0530"
     } ,
@@ -40,7 +40,7 @@
       "title"    : "FizzBuzz",
       "description" : "Implementing fizzbuzz using python",
       "category" : "",
-      "tags"     : "fizzbuzz,, math,, string,, algorithms",
+      "tags"     : "fizzbuzz, math, string, algorithms",
       "url"      : "/2022/05/29/fizzbuzz",
       "date"     : "2022-05-29 00:00:00 +0530"
     } ,
@@ -49,7 +49,7 @@
       "title"    : "Caesar Cipher",
       "description" : "Implementing caesar cipher using python",
       "category" : "",
-      "tags"     : "caesar,, cipher,, string,, algorithms",
+      "tags"     : "caesar, cipher, string, algorithms",
       "url"      : "/2022/05/28/caesar-cipher",
       "date"     : "2022-05-28 00:00:00 +0530"
     } ,
@@ -58,7 +58,7 @@
       "title"    : "Last digit !!!??",
       "description" : "Last Digit",
       "category" : "",
-      "tags"     : "last_digits,, string,, algorithms",
+      "tags"     : "last_digits, string, algorithms",
       "url"      : "/2022/05/27/last-digits",
       "date"     : "2022-05-27 00:00:00 +0530"
     } ,
@@ -67,7 +67,7 @@
       "title"    : "Anagrams !?",
       "description" : "Anagrams detection using python",
       "category" : "",
-      "tags"     : "anagram,, string,, algorithms",
+      "tags"     : "anagram, string, algorithms",
       "url"      : "/2022/05/26/anagram-detection",
       "date"     : "2022-05-26 00:00:00 +0530"
     } ,
@@ -76,7 +76,7 @@
       "title"    : "Palindrome !?",
       "description" : "Palindrome detection using python",
       "category" : "",
-      "tags"     : "palindrome,, detection,, string,, algorithms,",
+      "tags"     : "palindrome, detection, string, algorithms",
       "url"      : "/2022/05/25/palindrome-python",
       "date"     : "2022-05-25 00:00:00 +0530"
     } ,
