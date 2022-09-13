@@ -1,6 +1,15 @@
 [
   
     {
+      "title"    : "Ruby on rails active storage custom key or path",
+      "description" : "rails active storage custom key or path",
+      "category" : "",
+      "tags"     : "rails, active storage, ruby on rails, ror, aws, s3",
+      "url"      : "/2022/09/13/rails-active-storage-custom-key-or-path-s3",
+      "date"     : "2022-09-13 00:00:00 +0530"
+    } ,
+  
+    {
       "title"    : "Persistent Checkbox Rails",
       "description" : "Implementing persistent using ruby on rails",
       "category" : "",

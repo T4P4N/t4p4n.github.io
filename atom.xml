@@ -4,13 +4,96 @@
  <title>T4P4N</title>
  <link href="https://t4p4n.github.io/atom.xml" rel="self"/>
  <link href="https://t4p4n.github.io/"/>
- <updated>2022-08-21T14:16:54+05:30</updated>
+ <updated>2022-09-13T12:49:42+05:30</updated>
  <id>https://t4p4n.github.io</id>
  <author>
    <name>Tapan Kashyap</name>
    <email>tapank415@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Ruby on rails active storage custom key or path</title>
+   <link href="https://t4p4n.github.io/2022/09/13/rails-active-storage-custom-key-or-path-s3"/>
+   <updated>2022-09-13T00:00:00+05:30</updated>
+   <id>https://t4p4n.github.io/2022/09/13/rails-active-storage-custom-key-or-path-s3</id>
+   <content type="html">&lt;ul&gt;
+  &lt;li&gt;Chances are if you came to this post, you’re probably looking this snippet:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;image_file&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:image&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;profile_pic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;attach&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+&lt;span class=&quot;ss&quot;&gt;io:  &lt;/span&gt;&lt;span class=&quot;no&quot;&gt;File&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;image_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+&lt;span class=&quot;ss&quot;&gt;filename:  &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;image_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;original_filename&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;ss&quot;&gt;key:  &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;images/&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;image_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;original_filename&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;save&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Okay so what it does actually, 
+first we get the uploaded file from params 
+and then we attach the image with model_object.attach method
+You can read more about it  &lt;a href=&quot;https://github.com/rails/rails/commit/4dba136c83cc808282625c0d5b195ce5e0bbaa68&quot;&gt;here&lt;/a&gt;
+and then just call the save method.&lt;/p&gt;
+
+&lt;p&gt;Basic idea is we have to treat images separately 
+if we want to use custom key, Otherwise it will generate keys like this:  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pv8xs3kdz4aohenj9znjgrhpgty8&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;zem3wx1hmiyh9q4ahyuav1ooj4j9&lt;/code&gt;
+which is definitely worse than these : &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;images/420/my_pic.jpg&lt;/code&gt; , &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;images/420/oYUcPwegJppnAK4UJmv52e3xpNXf&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;In the long run when we want to migrate/remove our data, we can do 
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rm -rf images/&lt;/code&gt; on the other hand if we use auto generated keys we need to figure out which one are images 
+or videos or documents etc.&lt;/p&gt;
+
+&lt;p&gt;Since auto generated keys doesn’t have extensions. 
+We can’t really check them without opening the files, 
+and not to mention that we also don’t have directories 
+(which is essentially just keys separated by backslashes).&lt;/p&gt;
+
+&lt;p&gt;But there’s one issue this approach  if we use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;original_filename&lt;/code&gt; in the key:&lt;/p&gt;
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;image_file&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:image&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;profile_pic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;attach&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+&lt;span class=&quot;ss&quot;&gt;io:  &lt;/span&gt;&lt;span class=&quot;no&quot;&gt;File&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;image_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+&lt;span class=&quot;ss&quot;&gt;filename:  &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;image_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;original_filename&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;ss&quot;&gt;key:  &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;images/&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;image_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;original_filename&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;########################## Here^&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&quot;the-issue-we-need-to-face-is-duplicate-key-error-which-will-be-caused-if-user-tries-to-upload-a-image-with-same-name-so-lets-look-what-is-it--how-to-deal-with-it&quot;&gt;The issue we need to face is Duplicate Key Error which will be caused if user tries to upload a image with same name. so let’s look what is it &amp;amp; how to deal with it?&lt;/h2&gt;
+&lt;h4 id=&quot;error&quot;&gt;Error&lt;/h4&gt;
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;no&quot;&gt;ActiveRecord&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;RecordNotUnique&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;PG&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;UniqueViolation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ERROR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;duplicate&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;key&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;violates&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;unique&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;constraint&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;index_active_storage_blobs_on_key&quot;&lt;/span&gt;
+&lt;span class=&quot;no&quot;&gt;DETAIL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;  &lt;span class=&quot;no&quot;&gt;Key&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;420&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;profile_pic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;jpg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;already&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;exists&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;the-deal&quot;&gt;The deal&lt;/h3&gt;
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt;  &lt;span class=&quot;s1&quot;&gt;&apos;securerandom&apos;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# important^&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;UsersController&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ApplicationController&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;create&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;image_file&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:image&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;profile_pic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;attach&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+		&lt;span class=&quot;ss&quot;&gt;io:  &lt;/span&gt;&lt;span class=&quot;no&quot;&gt;File&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;image_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+		&lt;span class=&quot;ss&quot;&gt;filename:  &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;image_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;original_filename&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+		&lt;span class=&quot;ss&quot;&gt;key:  &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;images/&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;SecureRandom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;base58&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;28&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+		&lt;span class=&quot;c1&quot;&gt;########################## Use This^&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;save&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Explanation: we import the the secure random module with  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;require  &apos;securerandom&apos;&lt;/code&gt; you can read more about it &lt;a href=&quot;https://ruby-doc.org/stdlib-1.9.2/libdoc/securerandom/rdoc/SecureRandom.html&quot;&gt;here&lt;/a&gt;
+PS: it generates secure and also random strings/numbers/hex/bytes etc.
+ this module is also used by rails active storage evidence &lt;a href=&quot;https://api.rubyonrails.org/classes/ActiveRecord/SecureToken/ClassMethods.html#method-i-generate_unique_secure_token&quot;&gt;here&lt;/a&gt; and &lt;a href=&quot;https://apidock.com/rails/ActiveStorage/Blob/key&quot;&gt;here&lt;/a&gt;
+ also i checked both keys one(auto-gen by rails) by one(our patch above)
+ both have same length (28 chars)&lt;/p&gt;
+
+&lt;p&gt;just so that we don’t have worry about potential security issues introduced by our own patches.&lt;/p&gt;
+
+&lt;p&gt;Anyways that’s it for this one!
+ if you want  to support me! just me hit up!  via &lt;a href=&quot;https://t4p4n.github.io/contact/&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;thanks-for-reading-&quot;&gt;Thanks for reading :)&lt;/h5&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Persistent Checkbox Rails</title>
