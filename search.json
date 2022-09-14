@@ -10,6 +10,15 @@
     } ,
   
     {
+      "title"    : "Data migration from old to new laptop",
+      "description" : "Data transfer between two computers",
+      "category" : "",
+      "tags"     : "Wifi vs Ethernet, LAN Cable, Data Transfer, wireless vs wired",
+      "url"      : "/2022/09/12/file-transfer-between-laptops",
+      "date"     : "2022-09-12 00:00:00 +0530"
+    } ,
+  
+    {
       "title"    : "Persistent Checkbox Rails",
       "description" : "Implementing persistent using ruby on rails",
       "category" : "",

@@ -4,7 +4,7 @@
  <title>T4P4N</title>
  <link href="https://t4p4n.github.io/atom.xml" rel="self"/>
  <link href="https://t4p4n.github.io/"/>
- <updated>2022-09-13T12:49:42+05:30</updated>
+ <updated>2022-09-14T11:11:49+05:30</updated>
  <id>https://t4p4n.github.io</id>
  <author>
    <name>Tapan Kashyap</name>
@@ -18,7 +18,7 @@
    <updated>2022-09-13T00:00:00+05:30</updated>
    <id>https://t4p4n.github.io/2022/09/13/rails-active-storage-custom-key-or-path-s3</id>
    <content type="html">&lt;ul&gt;
-  &lt;li&gt;Chances are if you came to this post, you’re probably looking this snippet:&lt;/li&gt;
+  &lt;li&gt;Chances are if you came to this post, you’re probably looking for this snippet:&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;image_file&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:image&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
@@ -35,7 +35,7 @@ and then we attach the image with model_object.attach method
 You can read more about it  &lt;a href=&quot;https://github.com/rails/rails/commit/4dba136c83cc808282625c0d5b195ce5e0bbaa68&quot;&gt;here&lt;/a&gt;
 and then just call the save method.&lt;/p&gt;
 
-&lt;p&gt;Basic idea is we have to treat images separately 
+&lt;p&gt;Basic idea is we have to treat images or files separately 
 if we want to use custom key, Otherwise it will generate keys like this:  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pv8xs3kdz4aohenj9znjgrhpgty8&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;zem3wx1hmiyh9q4ahyuav1ooj4j9&lt;/code&gt;
 which is definitely worse than these : &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;images/420/my_pic.jpg&lt;/code&gt; , &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;images/420/oYUcPwegJppnAK4UJmv52e3xpNXf&lt;/code&gt;&lt;/p&gt;
 
@@ -48,7 +48,7 @@ We can’t really check them without opening the files,
 and not to mention that we also don’t have directories 
 (which is essentially just keys separated by backslashes).&lt;/p&gt;
 
-&lt;p&gt;But there’s one issue this approach  if we use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;original_filename&lt;/code&gt; in the key:&lt;/p&gt;
+&lt;p&gt;But there’s one issue this approach  if we use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;original_filename&lt;/code&gt; in the key like this:&lt;/p&gt;
 &lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;image_file&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:image&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;profile_pic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;attach&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
 &lt;span class=&quot;ss&quot;&gt;io:  &lt;/span&gt;&lt;span class=&quot;no&quot;&gt;File&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;image_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
@@ -57,13 +57,13 @@ and not to mention that we also don’t have directories
 &lt;span class=&quot;c1&quot;&gt;########################## Here^&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h2 id=&quot;the-issue-we-need-to-face-is-duplicate-key-error-which-will-be-caused-if-user-tries-to-upload-a-image-with-same-name-so-lets-look-what-is-it--how-to-deal-with-it&quot;&gt;The issue we need to face is Duplicate Key Error which will be caused if user tries to upload a image with same name. so let’s look what is it &amp;amp; how to deal with it?&lt;/h2&gt;
+&lt;h5 id=&quot;the-issue-we-need-to-face-is-duplicate-key-error-which-will-be-caused-if-user-tries-to-upload-a-image-with-same-name-so-lets-look-what-is-it--how-to-deal-with-it&quot;&gt;The issue we need to face is Duplicate Key Error which will be caused if user tries to upload a image with same name. so let’s look what is it &amp;amp; how to deal with it?&lt;/h5&gt;
 &lt;h4 id=&quot;error&quot;&gt;Error&lt;/h4&gt;
 &lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;no&quot;&gt;ActiveRecord&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;RecordNotUnique&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;PG&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;UniqueViolation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ERROR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;duplicate&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;key&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;violates&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;unique&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;constraint&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;index_active_storage_blobs_on_key&quot;&lt;/span&gt;
 &lt;span class=&quot;no&quot;&gt;DETAIL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;  &lt;span class=&quot;no&quot;&gt;Key&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;420&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;profile_pic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;jpg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;already&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;exists&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h3 id=&quot;the-deal&quot;&gt;The deal&lt;/h3&gt;
+&lt;h5 id=&quot;the-deal&quot;&gt;The deal&lt;/h5&gt;
 &lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt;  &lt;span class=&quot;s1&quot;&gt;&apos;securerandom&apos;&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;# important^&lt;/span&gt;
 
@@ -86,12 +86,78 @@ PS: it generates secure and also random strings/numbers/hex/bytes etc.
  also i checked both keys one(auto-gen by rails) by one(our patch above)
  both have same length (28 chars)&lt;/p&gt;
 
-&lt;p&gt;just so that we don’t have worry about potential security issues introduced by our own patches.&lt;/p&gt;
+&lt;p&gt;just so that we don’t have to worry about potential security issues introduced by our own patches.&lt;/p&gt;
 
 &lt;p&gt;Anyways that’s it for this one!
  if you want  to support me! just me hit up!  via &lt;a href=&quot;https://t4p4n.github.io/contact/&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
 
 &lt;h5 id=&quot;thanks-for-reading-&quot;&gt;Thanks for reading :)&lt;/h5&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Data migration from old to new laptop</title>
+   <link href="https://t4p4n.github.io/2022/09/12/file-transfer-between-laptops"/>
+   <updated>2022-09-12T00:00:00+05:30</updated>
+   <id>https://t4p4n.github.io/2022/09/12/file-transfer-between-laptops</id>
+   <content type="html">&lt;p&gt;Last sunday, i tried to transfer files from my old hp notebook(i3 5th gen, 4GB, 1TB HDD) 
+to my acer aspire 7 laptop(i5 12th gen, 8GB 512 GB pcie gen4 ssd)&lt;/p&gt;
+
+&lt;p&gt;After doing all the typical morning routine stuff,
+i’m ready to rock, not really cause frustration ahead :(&lt;/p&gt;
+
+&lt;p&gt;First thing i did was setting up openssh on windows 10 (native i,e not wsl) and it was painful tbh, took me 1.5 hrs
+I already wsl2 ubuntu setup on my old laptop 
+it could have great since i consider myself already good with linux.&lt;/p&gt;
+
+&lt;p&gt;But some issues with WSL2 Ubuntu
+its with IP assigned to WSL2 (btw wsl2 is a vm) each time network switches, The IP of wsl2  machine changes to some random IP, 
+which then needs to be forwarded via port proxy (powershell cmd) so that it exposed To LAN.&lt;/p&gt;
+
+&lt;p&gt;This is why i choose windows 10 native openssh server although it wasn’t a good experience due to lack of documentation from Microsoft side.&lt;/p&gt;
+
+&lt;p&gt;This was the network diagram after setting up openssh server:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Old laptop &amp;lt;---&amp;gt; My Phone &amp;lt;---&amp;gt; New Laptop
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;i used my phone as wifi hotspot to connect both devices &amp;amp; Winscp(scp client) on new laptop.&lt;/p&gt;
+
+&lt;p&gt;if you’re wondering why i used my phone?
+it’s because our router is a bit far away from my room, not mention that it may slow down others internet(LAN) too, 
+since its a cheap router like 10 bucks or 800rs. And also probably would have caused speed issues due to lack of network coverage in my roon.&lt;/p&gt;
+
+&lt;p&gt;But even with my phone sitting in between two laptops (and i mean technically &amp;amp; literally both here) and 
+bummer i got like 3-4 MB data transfer speed :( and not only that ii was fluctuating cause of number of files i was transferring about 10GB
+and an average about 3 MB per file&lt;/p&gt;
+
+&lt;p&gt;So i left it on for a while &amp;amp; slept for like 1 hr
+and i woke at 2:30pm i guess &amp;amp; it was still in progress &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-_-&lt;/code&gt; anyhow i let it run, there’s also another issue with wireless transfer, 
+when i turned on Bluetooth to connect my wireless earphones to my phone, And then speed suddenly went down to like 949 kbps &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-_-&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This was happening due to air traffic between 2.4 ghz wifi &amp;amp; 2.4ghz Bluetooth using same frequency band.&lt;/p&gt;
+
+&lt;p&gt;that was my situation i can’t even use my phone for anything &amp;amp; laptops are already busy transferring data, 
+If you remember i was using my phone as wifi hotspot, and both laptops were connected to it. 
+There’s also one problem with it was my phone didn’t had any internet pack available, 
+so i was completely offline for like 3 hrs straight &amp;amp; without any entertainment lols&lt;/p&gt;
+
+&lt;p&gt;That was probably why i fell asleep XD&lt;/p&gt;
+
+&lt;p&gt;Fast forward to 3:30pm after transfer was complete i messaged my friend ben, 
+and i informed him about the situation i was struggling with and asked for alternatives.&lt;/p&gt;
+
+&lt;p&gt;He sent a photo of LAN Cable, and said it will useful in these scenarios &amp;amp; 
+i asked few question about if we could connect two laptops directly without any switch or router, and he said yes, after a while 
+I remembered my brother had one LAN cable, which came in the tenda router box. I went to upstairs for tea break, and got the cable.&lt;/p&gt;
+
+&lt;p&gt;Connected the cable from old laptop to new laptop, And this was my first experience with a LAN Cable, 
+I started searching the internet for sharing files with a lan cable, found some articles
+did the typical network &amp;amp; file sharing setup in windows 10 &amp;amp; did test transfer of like 10GB
+of my music collection, about roughly 2100+ audio files
+and it just took less than 15mins.&lt;/p&gt;
+
+&lt;p&gt;I got like 10MBps or 100mbps and this time it was almost consistent 10MBps, And also i was to able to use my Bluetooth earphones &amp;amp; internet(wifi) freely.&lt;/p&gt;
 </content>
  </entry>
  
