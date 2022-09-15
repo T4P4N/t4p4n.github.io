@@ -5,7 +5,7 @@ description: 'Data transfer between two computers'
 title: 'Data migration from old to new laptop'
 ---
 
-Last sunday, i tried to transfer files from my old hp notebook(i3 5th gen, 4GB, 1TB HDD) 
+This sunday, i tried to transfer files from my old hp notebook(i3 5th gen, 4GB, 1TB HDD) 
 to my acer aspire 7 laptop(i5 12th gen, 8GB 512 GB pcie gen4 ssd)
 
 After doing all the typical morning routine stuff,
