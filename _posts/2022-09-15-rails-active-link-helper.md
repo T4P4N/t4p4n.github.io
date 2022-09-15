@@ -10,19 +10,22 @@ There are many snippets on stack overflow around this topic but
 those are mostly dealing with a specific link to a page or a resource e.g. about page or blogs page
 if you haven't tried those snippets, you can try this one out:
 
-- File: `app/helpers/application_helper.rb`  
+###### `app/helpers/application_helper.rb`  
+
 ```ruby
 module ApplicationHelper
 
     def current?(key, path)
       "#{key}" if current_page? path 
-      # We use string interpolation "#{key}" here to access the CSS classes we are going to create.
     end
 
 end
-```
+```  
+  
+_     
 
-- File `views/layout/application.html.erb`
+###### `views/layout/application.html.erb`  
+  
 ```html
 <a
     href="<%= url_for(admin_posts_path) %>"
@@ -56,12 +59,14 @@ _______|_______________________|
 
 \* represents active state^
 if we click on edit this \*
-will disappear as we're no longer no the index page
+will disappear as we're no longer on the index page
 but we're still working with a post resource so it needs
-to be in active state. This is where we need the snippet below:
+to be in active state. 
+##### This is when we need the snippet below:
 
+_  
 
-- File: `app/helpers/active_resource_helper.rb`
+###### `app/helpers/active_resource_helper.rb`
 ```ruby
 module ActiveResourceHelper
 
@@ -78,8 +83,18 @@ module ActiveResourceHelper
     end    
 end
 ```
+_    
 
-### How does it work?  
+###### `views/layout/application.html.erb` 
+
+```html
+<a
+    href="<%= url_for(admin_posts_path) %>"
+    class="<%= "#{"sample_active_link_class" if on_posts_index_show_edit?}" %> normal_link_class "
+    > Posts </a>
+```
+
+### How does this^ work?  
 here we're working with just two variables provided by rails to help us in
 these kind of scenarios, first one is : `action_name`
 which as the name suggests, have the value of current action   
@@ -92,15 +107,6 @@ we get the second item from array returned by split function, and check if its
 the same as we want to be.
 
 
-- File: `views/layout/application.html.erb` 
-- or any template file where you want to display links & highlight currently active link.
-
-```html
-<a
-    href="<%= url_for(admin_posts_path) %>"
-    class="<%= "#{"sample_active_link_class" if on_posts_index_show_edit?}" %> normal_link_class "
-    > Posts </a>
-```
 
 This is useful when we are creating a navbar for a admin panel   
 where we need to list all available resources of our application 
