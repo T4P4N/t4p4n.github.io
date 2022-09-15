@@ -1,6 +1,15 @@
 [
   
     {
+      "title"    : "Rails active resource link helper",
+      "description" : "Implementing active resource link helper function in rails",
+      "category" : "",
+      "tags"     : "rails, active resource link, ruby on rails, ror",
+      "url"      : "/2022/09/15/rails-active-link-helper",
+      "date"     : "2022-09-15 00:00:00 +0530"
+    } ,
+  
+    {
       "title"    : "Ruby on rails active storage custom key or path",
       "description" : "rails active storage custom key or path",
       "category" : "",
