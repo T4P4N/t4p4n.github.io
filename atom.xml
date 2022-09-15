@@ -4,7 +4,7 @@
  <title>T4P4N</title>
  <link href="https://t4p4n.github.io/atom.xml" rel="self"/>
  <link href="https://t4p4n.github.io/"/>
- <updated>2022-09-15T15:21:55+05:30</updated>
+ <updated>2022-09-15T15:44:35+05:30</updated>
  <id>https://t4p4n.github.io</id>
  <author>
    <name>Tapan Kashyap</name>
@@ -21,28 +21,25 @@
 those are mostly dealing with a specific link to a page or a resource e.g. about page or blogs page
 if you haven’t tried those snippets, you can try this one out:&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;File: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;app/helpers/application_helper.rb&lt;/code&gt;&lt;br /&gt;
-```ruby
-module ApplicationHelper&lt;/p&gt;
+&lt;h6 id=&quot;apphelpersapplication_helperrb&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;app/helpers/application_helper.rb&lt;/code&gt;&lt;/h6&gt;
 
-    &lt;p&gt;def current?(key, path)
-    “#{key}” if current_page? path 
-    # We use string interpolation “#{key}” here to access the CSS classes we are going to create.
-  end&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;ApplicationHelper&lt;/span&gt;
 
-&lt;p&gt;end&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-- File `views/layout/application.html.erb`  
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;current?&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;current_page?&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;path&lt;/span&gt; 
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 
-```html
-&amp;lt;a
-    href=&quot;&amp;lt;%= url_for(admin_posts_path) %&amp;gt;&quot;
-    class=&quot;&amp;lt;%= &quot;#{current? &quot;sample_active_link_class&quot;, admin_posts_path}&quot; %&amp;gt; normal_class&quot;
-    &amp;gt; Posts &amp;lt;/a&amp;gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;_&lt;/p&gt;
+
+&lt;h6 id=&quot;viewslayoutapplicationhtmlerb&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;views/layout/application.html.erb&lt;/code&gt;&lt;/h6&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&amp;lt;%= url_for(admin_posts_path) %&amp;gt;&quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&amp;lt;%= &quot;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;sample_active_link_class&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&quot;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;admin_posts_path&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;}&quot;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt; normal_class&quot;
+    &amp;gt; Posts &lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;This works using the current_page function provided by rails action view url helper.
@@ -70,14 +67,14 @@ _______|_______________________|
 
 &lt;p&gt;* represents active state^
 if we click on edit this *
-will disappear as we’re no longer no the index page
+will disappear as we’re no longer on the index page
 but we’re still working with a post resource so it needs
-to be in active state. This is where we need the snippet below:&lt;/p&gt;
+to be in active state.&lt;/p&gt;
+&lt;h5 id=&quot;this-is-when-we-need-the-snippet-below&quot;&gt;This is when we need the snippet below:&lt;/h5&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;File: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;app/helpers/active_resource_helper.rb&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;_&lt;/p&gt;
 
+&lt;h6 id=&quot;apphelpersactive_resource_helperrb&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;app/helpers/active_resource_helper.rb&lt;/code&gt;&lt;/h6&gt;
 &lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;ActiveResourceHelper&lt;/span&gt;
 
     &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;on_posts_index_show_edit?&lt;/span&gt;
@@ -93,8 +90,17 @@ to be in active state. This is where we need the snippet below:&lt;/p&gt;
     &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;    
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;_&lt;/p&gt;
 
-&lt;h3 id=&quot;how-does-it-work&quot;&gt;How does it work?&lt;/h3&gt;
+&lt;h6 id=&quot;viewslayoutapplicationhtmlerb-1&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;views/layout/application.html.erb&lt;/code&gt;&lt;/h6&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&amp;lt;%= url_for(admin_posts_path) %&amp;gt;&quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&amp;lt;%= &quot;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;{&quot;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;sample_active_link_class&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;on_posts_index_show_edit&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;?}&quot;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt; normal_link_class &quot;
+    &amp;gt; Posts &lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;how-does-this-work&quot;&gt;How does this^ work?&lt;/h3&gt;
 &lt;p&gt;here we’re working with just two variables provided by rails to help us in
 these kind of scenarios, first one is : &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;action_name&lt;/code&gt;
 which as the name suggests, have the value of current action &lt;br /&gt;
@@ -105,21 +111,6 @@ on the specific page that we’re rendering.&lt;/p&gt;
 that is in our case &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;admin/posts&lt;/code&gt;, which then split by &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/&lt;/code&gt; and&lt;br /&gt;
 we get the second item from array returned by split function, and check if its&lt;br /&gt;
 the same as we want to be.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;File: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;views/layout/application.html.erb&lt;/code&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;or any template file where you want to display links &amp;amp; highlight currently active link.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&amp;lt;%= url_for(admin_posts_path) %&amp;gt;&quot;&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&amp;lt;%= &quot;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;{&quot;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;sample_active_link_class&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;on_posts_index_show_edit&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;?}&quot;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt; normal_link_class &quot;
-    &amp;gt; Posts &lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;This is useful when we are creating a navbar for a admin panel &lt;br /&gt;
 where we need to list all available resources of our application 
