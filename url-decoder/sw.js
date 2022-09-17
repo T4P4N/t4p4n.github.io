@@ -6,17 +6,13 @@ self.addEventListener("install", function (e) {
       return cache.addAll([ 
         "./static/css/main.92d7c84c.chunk.css",
         "./static/css/main.92d7c84c.chunk.css.map",
-        
         "./static/js/main.770fd736.chunk.js",
         "./static/js/main.770fd736.chunk.js.map",
-        
         "./static/js/runtime-main.f496e3e0.js",
         "./static/js/runtime-main.f496e3e0.js.map",
-
         "./static/js/2.4f2d7ce1.chunk.js",
         "./static/js/2.4f2d7ce1.chunk.js.map",
         "./static/js/2.4f2d7ce1.chunk.js.LICENSE.txt",
-        
         "./manifest.json",
         "./images/android-chrome-192x192.png",
         "./images/android-chrome-512x512.png",
