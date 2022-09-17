@@ -1,0 +1,27 @@
+{
+  "name": "URL Converter",
+  "short_name": "URL Converter",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#141414",
+  "theme_color": "#ff006a",
+  "scope": ".",
+  "description": "A URL converter",
+  "icons": [
+    {
+      "src": "images/android-chrome-full.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    },
+    {
+      "src": "images/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
