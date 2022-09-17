@@ -15,6 +15,6 @@
   desc: A Dope Wars clone made using Reactjs.
 
 - name: URL Decoder
-  slug: /csb-8yo5g6  
-  desc: Handy little utility for encoding & decoding urls.
+  slug: /url-decoder  
+  desc: A handy little utility for encoding & decoding urls.
 
