@@ -1,6 +1,15 @@
 [
   
     {
+      "title"    : "Setup postgresql for web development",
+      "description" : "Setting up postgresql for web development",
+      "category" : "",
+      "tags"     : "postgresql, databases, prisma, shell, linux",
+      "url"      : "/2022/10/27/postgresql-web-development-setup",
+      "date"     : "2022-10-27 00:00:00 +0530"
+    } ,
+  
+    {
       "title"    : "Rails active resource link helper",
       "description" : "Implementing active resource link helper function in rails",
       "category" : "",

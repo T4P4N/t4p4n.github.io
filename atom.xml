@@ -4,13 +4,82 @@
  <title>T4P4N</title>
  <link href="https://t4p4n.github.io/atom.xml" rel="self"/>
  <link href="https://t4p4n.github.io/"/>
- <updated>2022-09-17T19:21:55+05:30</updated>
+ <updated>2022-10-27T12:12:50+05:30</updated>
  <id>https://t4p4n.github.io</id>
  <author>
    <name>Tapan Kashyap</name>
    <email>tapank415@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Setup postgresql for web development</title>
+   <link href="https://t4p4n.github.io/2022/10/27/postgresql-web-development-setup"/>
+   <updated>2022-10-27T00:00:00+05:30</updated>
+   <id>https://t4p4n.github.io/2022/10/27/postgresql-web-development-setup</id>
+   <content type="html">&lt;h3 id=&quot;login-into-postgresql-server-using-adminroot-privileges&quot;&gt;Login into postgresql server using admin/root privileges&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt; postgres psql
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;inside-postgresql-root-shell&quot;&gt;Inside postgresql root shell&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Create a database
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;create database database_name&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;_&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Create a new user
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;create user username_here with encrypted password &lt;span class=&quot;s1&quot;&gt;&apos;password_here&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;_&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Grant all privileges to user on the database
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;grant all privileges on database database_name to username_here&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;_&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So far this is enough for most cases like working with Ruby on Rails(Active record), Django(Django ORM), Flask(SQLAlchemy), Laravel(Eloquent), And Spring(Hibernate) etc.&lt;/p&gt;
+
+&lt;p&gt;But things are a bit different in when it comes to prisma (ORM mostly popular in js ecosystem)
+it requires us to make a new shadow database before every migrations.&lt;/p&gt;
+
+&lt;p&gt;You can read more about it &lt;a href=&quot;https://www.prisma.io/docs/concepts/components/prisma-migrate/shadow-database&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Basically we need our database user to have permission to create new database in postgresql server. To do this run:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ALTER ROLE username_here CREATEDB&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;To check if user has permission to create new databases run this:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;se&quot;&gt;\d&lt;/span&gt;u
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;it should output a table something similar to this:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; Role name         |                         Attributes                         | Member of
+-------------------+------------------------------------------------------------+-----------
+ postgres          | Superuser, Create role, Create DB, Replication, Bypass RLS | {}
+ username_here     | Create DB                                                  | {}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Here are some common postgresql commands:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\q&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;crtl&lt;/code&gt; + &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;d&lt;/code&gt; quits the postgresql shell&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\l&lt;/code&gt; lists all available databases&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;crtl&lt;/code&gt; + &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;l&lt;/code&gt; clears the console&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;crtl&lt;/code&gt; + &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;c&lt;/code&gt; quits currently typed command in the postgresql shell&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\?&lt;/code&gt; for help&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;thanks-for-reading--keep-coding&quot;&gt;Thanks for reading &amp;amp; Keep coding!!!&lt;/h4&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>Rails active resource link helper</title>
