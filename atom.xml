@@ -4,13 +4,54 @@
  <title>T4P4N</title>
  <link href="https://t4p4n.github.io/atom.xml" rel="self"/>
  <link href="https://t4p4n.github.io/"/>
- <updated>2022-10-27T12:12:50+05:30</updated>
+ <updated>2022-12-05T22:47:59+05:30</updated>
  <id>https://t4p4n.github.io</id>
  <author>
    <name>Tapan Kashyap</name>
    <email>tapank415@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Trainspotting Review</title>
+   <link href="https://t4p4n.github.io/2022/12/05/trainspotting-review"/>
+   <updated>2022-12-05T00:00:00+05:30</updated>
+   <id>https://t4p4n.github.io/2022/12/05/trainspotting-review</id>
+   <content type="html">&lt;p&gt;[10/10] Not gonna lie&lt;/p&gt;
+
+&lt;h4 id=&quot;how-i-found-trainspotting&quot;&gt;How i found Trainspotting!?&lt;/h4&gt;
+&lt;p&gt;i usually listen to doomer music which is basically classical rock genere mixed with sad vibes. Specifically I was watching this video:
+&lt;a href=&quot;https://m.youtube.com/watch?v=9XViPhRnOiQ&quot;&gt;Crystal Castles - Vanished &lt;/a&gt; (This track is also amazing!!!)&lt;/p&gt;
+
+&lt;p&gt;In the description of this i found out the movie name&lt;/p&gt;
+
+&lt;h4 id=&quot;what-i-did-after-finding-the-movie-name&quot;&gt;What i did after finding the movie name?&lt;/h4&gt;
+&lt;p&gt;i went straight to yts torrents, got .torr* file;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;aria2c filename.torrent&lt;/code&gt;&lt;br /&gt;
+&amp;gt;&amp;gt;&amp;gt; wait for 20 mins
+And there you have it 1080p copy of Trainspotting&lt;/p&gt;
+
+&lt;p&gt;I try to avoid reading anything about a movie before watching it. I think its defeats the purpose of watching a movie, its removes the surprise from movie.&lt;/p&gt;
+
+&lt;p&gt;if there are scenes of a movie appear in doomer music video then its probably Good or A masterpiece.&lt;/p&gt;
+
+&lt;h4 id=&quot;started-watching-it&quot;&gt;Started watching it:&lt;/h4&gt;
+&lt;p&gt;&amp;gt;&amp;gt;&amp;gt; 11:30pm - 1:00am&lt;br /&gt;
+At first i thought its yet another “hollywood movie” after watching the movie i googled about it, Turned out It was a British masterpiece made in 1996. Also Its in the British top 100 movies of all time, at tenth spot tho.&lt;/p&gt;
+
+&lt;h4 id=&quot;plot&quot;&gt;Plot&lt;/h4&gt;
+&lt;p&gt;i dont wanna spoil it !!! if you’re into drugs &amp;amp; crime genre &amp;amp; “you’re quiet &amp;amp; sensitive type and your inner you is witty, adventurous, passionate, loving, loyal &amp;amp; a little bit crazy &amp;amp; a little bit bad”&lt;/p&gt;
+
+&lt;p&gt;You’ll gonna love it that’s my promise&lt;/p&gt;
+
+&lt;p&gt;Also worth mentioning is the soundtracks
+i personally really liked Atomic by sleeper &amp;amp; Temptation by new order.
+Now its time for me to get a final hit (just kidding)&lt;/p&gt;
+
+&lt;p&gt;Bye Bye&lt;br /&gt;
+Thanks for reading&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Setup postgresql for web development</title>

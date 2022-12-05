@@ -1,6 +1,15 @@
 [
   
     {
+      "title"    : "Trainspotting Review",
+      "description" : "Movie review of trainspotting",
+      "category" : "",
+      "tags"     : "trainspotting, movies, britfeel, scotland",
+      "url"      : "/2022/12/05/trainspotting-review",
+      "date"     : "2022-12-05 00:00:00 +0530"
+    } ,
+  
+    {
       "title"    : "Setup postgresql for web development",
       "description" : "Setting up postgresql for web development",
       "category" : "",
