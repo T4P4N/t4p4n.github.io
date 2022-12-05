@@ -9,7 +9,7 @@ tags: [ trainspotting, movies, britfeel, scotland]
 [10/10] Not gonna lie
 
 #### How i found Trainspotting!?
-i usually listen to doomer music which is basically classical rock genere mixed with sad vibes. Specifically I was watching this video:
+i usually listen to doomer music which is basically classical rock genre mixed with sad vibes. Specifically I was watching this video:
 [Crystal Castles - Vanished ](https://m.youtube.com/watch?v=9XViPhRnOiQ) (This track is also amazing!!!)
 
 In the description of this i found out the movie name
