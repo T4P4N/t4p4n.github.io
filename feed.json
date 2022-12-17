@@ -17,6 +17,30 @@
 "items": [
     
         {
+            "id": "https://t4p4n.github.io/2022/12/17/connecting-the-dots-partially",
+            "title": "Connecting the dots (Partially)",
+            "summary": "Connecting the dots (Partially)",
+            "content_text": "Connecting the dots (partially)I’m very happy to see how small things are coming together to help me in my day to day work life as a junior developer. My web dev journey as started in late 2020 which you read more about it hereBefore joining storetools, i had some little experience as i completed my first book django 3 by example, it taught me MVC architecture , Databases, Basic request response cycle etc.  As well as django specific things like Django template language, Django ORM, Django admin panel, APIs with Django Rest Framework. And also i got some more experience as I did few freelance projects with Ben. We got to learn many things such as working on a legacy code of Django 2 version, Extending with out own ideas such as implementing online payments into a old Hostel management system. Working on chat application that we made in flask socketio &amp; websockets, that was my first intro to event driven programming.Also i used to learn web security in 2019, which taught me how to use browser dev tools, And also learned frontend from kevin powell &amp;  Traversy Media.Nowadays i work mostly with nestjs &amp; react &amp; as well as some liquid template, which are kind of same tech but just with javascript flavour this time instead of Python, I can speed things up for me like 2x because of past experiences with Programming. TLDR; Learning never goes to waste… unless ofcourse its ruby &amp; rails *Btw its just the starting, That is why i named this post as Connecting the dots (partially), i have plenty of things to learn &amp; utilize in future. So let’s see how this goes.Thanks for reading Bye Bye* (just kidding i still have plenty of space in my heart for  ruby &amp; rails)",
+            "content_html": "<h1 id=\"connecting-the-dots-partially\">Connecting the dots (partially)</h1><p>I’m very happy to see how small things are coming together to help me in my day to day work life as a junior developer. My web dev journey as started in late 2020 which you read more about it <a href=\"https://t4p4n.github.io/about/\">here</a></p><p>Before joining <a href=\"https://storetools.io/\">storetools</a>, i had some little experience as i completed my first book <a href=\"https://www.packtpub.com/product/django-4-by-example-fourth-edition/9781801813051\">django 3 by example</a>, it taught me <a href=\"https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller\">MVC</a> architecture , <a href=\"https://en.wikipedia.org/wiki/Database\">Databases</a>, Basic <a href=\"https://en.wikipedia.org/wiki/Request%E2%80%93response\">request response</a> cycle etc.  As well as django specific things like <a href=\"https://docs.djangoproject.com/en/4.1/ref/templates/language/\">Django template language</a>, <a href=\"https://docs.djangoproject.com/en/4.1/topics/db/queries/\">Django ORM</a>, Django admin panel, APIs with <a href=\"https://www.django-rest-framework.org/\">Django Rest Framework</a>. And also i got some more experience as I did few freelance projects with <a href=\"https://b3nsh4.com\">Ben</a>. We got to learn many things such as working on a legacy code of Django 2 version, Extending with out own ideas such as implementing online payments into a old Hostel management system. Working on chat application that we made in <a href=\"https://flask.palletsprojects.com/en/2.2.x/\">flask</a> <a href=\"https://socket.io/\">socketio</a> &amp; <a href=\"https://en.wikipedia.org/wiki/WebSocket\">websockets</a>, that was my first intro to <a href=\"https://en.wikipedia.org/wiki/Event-driven_architecture\">event driven</a> programming.</p><p>Also i used to learn <a href=\"https://owasp.org/\">web security</a> in 2019, which taught me how to use browser dev tools, And also learned frontend from <a href=\"https://www.kevinpowell.co/\">kevin powell</a> &amp;  <a href=\"https://www.traversymedia.com/\">Traversy Media</a>.</p><p>Nowadays i work mostly with <a href=\"https://nestjs.com/\">nestjs</a> &amp; <a href=\"https://reactjs.org/\">react</a> &amp; as well as some <a href=\"https://shopify.github.io/liquid/\">liquid template</a>, which are kind of same tech but just with <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript\">javascript</a> flavour this time instead of <a href=\"https://www.python.org/\">Python</a>, I can speed things up for me like 2x because of past experiences with Programming. TLDR; Learning never goes to waste… unless ofcourse its <a href=\"https://www.ruby-lang.org/en/\">ruby</a> &amp; <a href=\"https://rubyonrails.org/\">rails</a> *</p><p>Btw its just the starting, That is why i named this post as Connecting the dots (partially), i have plenty of things to learn &amp; utilize in future. So let’s see how this goes.</p><p>Thanks for reading Bye Bye</p><p>* (just kidding i still have plenty of space in my heart for  <a href=\"https://www.ruby-lang.org/en/\">ruby</a> &amp; <a href=\"https://rubyonrails.org/\">rails</a>)</p>",
+            "url": "https://t4p4n.github.io/2022/12/17/connecting-the-dots-partially",
+            
+            
+            
+            "tags": ["life","tech","job","learning"],
+            
+            "date_published": "2022-12-17T00:00:00+05:30",
+            "date_modified": "2022-12-17T00:00:00+05:30",
+            
+                "author":  {
+                "name": "Tapan Kashyap",
+                "url": null,
+                "avatar": null
+                }
+                
+            
+        },
+    
+        {
             "id": "https://t4p4n.github.io/2022/12/05/trainspotting-review",
             "title": "Trainspotting Review",
             "summary": "Movie review of trainspotting",

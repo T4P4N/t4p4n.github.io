@@ -4,13 +4,38 @@
  <title>T4P4N</title>
  <link href="https://t4p4n.github.io/atom.xml" rel="self"/>
  <link href="https://t4p4n.github.io/"/>
- <updated>2022-12-05T22:50:41+05:30</updated>
+ <updated>2022-12-17T17:35:22+05:30</updated>
  <id>https://t4p4n.github.io</id>
  <author>
    <name>Tapan Kashyap</name>
    <email>tapank415@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Connecting the dots (Partially)</title>
+   <link href="https://t4p4n.github.io/2022/12/17/connecting-the-dots-partially"/>
+   <updated>2022-12-17T00:00:00+05:30</updated>
+   <id>https://t4p4n.github.io/2022/12/17/connecting-the-dots-partially</id>
+   <content type="html">&lt;h1 id=&quot;connecting-the-dots-partially&quot;&gt;Connecting the dots (partially)&lt;/h1&gt;
+&lt;p&gt;I’m very happy to see how small things are coming together to help me in my day to day work life as a junior developer. My web dev journey as started in late 2020 which you read more about it &lt;a href=&quot;https://t4p4n.github.io/about/&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Before joining &lt;a href=&quot;https://storetools.io/&quot;&gt;storetools&lt;/a&gt;, i had some little experience as i completed my first book &lt;a href=&quot;https://www.packtpub.com/product/django-4-by-example-fourth-edition/9781801813051&quot;&gt;django 3 by example&lt;/a&gt;, it taught me &lt;a href=&quot;https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller&quot;&gt;MVC&lt;/a&gt; architecture , &lt;a href=&quot;https://en.wikipedia.org/wiki/Database&quot;&gt;Databases&lt;/a&gt;, Basic &lt;a href=&quot;https://en.wikipedia.org/wiki/Request%E2%80%93response&quot;&gt;request response&lt;/a&gt; cycle etc.  As well as django specific things like &lt;a href=&quot;https://docs.djangoproject.com/en/4.1/ref/templates/language/&quot;&gt;Django template language&lt;/a&gt;, &lt;a href=&quot;https://docs.djangoproject.com/en/4.1/topics/db/queries/&quot;&gt;Django ORM&lt;/a&gt;, Django admin panel, APIs with &lt;a href=&quot;https://www.django-rest-framework.org/&quot;&gt;Django Rest Framework&lt;/a&gt;. And also i got some more experience as I did few freelance projects with &lt;a href=&quot;https://b3nsh4.com&quot;&gt;Ben&lt;/a&gt;. We got to learn many things such as working on a legacy code of Django 2 version, Extending with out own ideas such as implementing online payments into a old Hostel management system. Working on chat application that we made in &lt;a href=&quot;https://flask.palletsprojects.com/en/2.2.x/&quot;&gt;flask&lt;/a&gt; &lt;a href=&quot;https://socket.io/&quot;&gt;socketio&lt;/a&gt; &amp;amp; &lt;a href=&quot;https://en.wikipedia.org/wiki/WebSocket&quot;&gt;websockets&lt;/a&gt;, that was my first intro to &lt;a href=&quot;https://en.wikipedia.org/wiki/Event-driven_architecture&quot;&gt;event driven&lt;/a&gt; programming.&lt;/p&gt;
+
+&lt;p&gt;Also i used to learn &lt;a href=&quot;https://owasp.org/&quot;&gt;web security&lt;/a&gt; in 2019, which taught me how to use browser dev tools, And also learned frontend from &lt;a href=&quot;https://www.kevinpowell.co/&quot;&gt;kevin powell&lt;/a&gt; &amp;amp;  &lt;a href=&quot;https://www.traversymedia.com/&quot;&gt;Traversy Media&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Nowadays i work mostly with &lt;a href=&quot;https://nestjs.com/&quot;&gt;nestjs&lt;/a&gt; &amp;amp; &lt;a href=&quot;https://reactjs.org/&quot;&gt;react&lt;/a&gt; &amp;amp; as well as some &lt;a href=&quot;https://shopify.github.io/liquid/&quot;&gt;liquid template&lt;/a&gt;, 
+which are kind of same tech but just with &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript&quot;&gt;javascript&lt;/a&gt; flavour this time instead of &lt;a href=&quot;https://www.python.org/&quot;&gt;Python&lt;/a&gt;, I can speed things up for me like 2x because of past experiences with Programming. TLDR; Learning never goes to waste… unless ofcourse its &lt;a href=&quot;https://www.ruby-lang.org/en/&quot;&gt;ruby&lt;/a&gt; &amp;amp; &lt;a href=&quot;https://rubyonrails.org/&quot;&gt;rails&lt;/a&gt; *&lt;/p&gt;
+
+&lt;p&gt;Btw its just the starting, That is why i named this post as Connecting the dots (partially), i have plenty of things to learn &amp;amp; utilize in future. So let’s see how this goes.&lt;/p&gt;
+
+&lt;p&gt;Thanks for reading 
+Bye Bye&lt;/p&gt;
+
+&lt;p&gt;* (just kidding i still have plenty of space in my heart for  &lt;a href=&quot;https://www.ruby-lang.org/en/&quot;&gt;ruby&lt;/a&gt; &amp;amp; &lt;a href=&quot;https://rubyonrails.org/&quot;&gt;rails&lt;/a&gt;)&lt;/p&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>Trainspotting Review</title>
