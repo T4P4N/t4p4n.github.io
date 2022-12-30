@@ -66,3 +66,10 @@ Btw really proud of xfce terminal & i configured it with these features:
 
 btw replicating the same setup on macOS is way easier then linux. Because community & consistency of macOS
 things are stable & preconfigured in macOS, mostly its just download application & run it (in a nutshell it works. But man copy pasting & selecting text is real pain in macOS thanks weird command key obbession).
+
+###### Screenshots
+[![https://imgur.com/rKcezq1.png](https://imgur.com/rKcezq1.png)](https://imgur.com/rKcezq1.png)
+
+[![https://imgur.com/Cfh2pSl.png](https://imgur.com/Cfh2pSl.png)](https://imgur.com/Cfh2pSl.png)
+
+[![https://imgur.com/xEeCl22.png](https://imgur.com/xEeCl22.png)](https://imgur.com/xEeCl22.png)
