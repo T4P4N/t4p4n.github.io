@@ -4,7 +4,7 @@
  <title>T4P4N</title>
  <link href="https://t4p4n.github.io/atom.xml" rel="self"/>
  <link href="https://t4p4n.github.io/"/>
- <updated>2022-12-17T17:35:22+05:30</updated>
+ <updated>2022-12-30T19:46:13+05:30</updated>
  <id>https://t4p4n.github.io</id>
  <author>
    <name>Tapan Kashyap</name>
@@ -13,12 +13,82 @@
 
  
  <entry>
+   <title>Switched to linux</title>
+   <link href="https://t4p4n.github.io/2022/12/30/switched-to-linux"/>
+   <updated>2022-12-30T00:00:00+05:30</updated>
+   <id>https://t4p4n.github.io/2022/12/30/switched-to-linux</id>
+   <content type="html">&lt;h3 id=&quot;linux-mint-to-be-specific&quot;&gt;Linux Mint to be specific&lt;/h3&gt;
+&lt;p&gt;i was waiting for this to happen. I’ve made plans for it way back in August i believe,
+i never liked windows, but had to use it because it wasn’t my own laptop, I brought
+this new mid range machine that is acer aspire 7
+i5 12th (1240p) 12 cores, 16 threads, 4.4ghz max turbo (Well enough for most usecases)
+8GB Ram (enough for linux, very low for windows 11 especially if you work with VMs/WSL)
+512GB (pcie gen 4 nvme SSD, good for me, cause i only hoard m4a &amp;amp; mp3s music files)
+NVIDIA GTX1650 (good gaming, but i dont do gaming lols)&lt;/p&gt;
+
+&lt;p&gt;So how was the exprience?
+it was not great at first, cause i initially 
+broke my first linux mint installation because of nvidia drivers :(
+now, i’m running without nvidia drivers, and its working pretty fine thanks to Powerful CPU&lt;/p&gt;
+
+&lt;p&gt;I dont really like distro hopping, i needed something stable, cause i use it as my daily driver.
+after a bit of research i found linux mint to beginner friendly as well as easy to install &amp;amp; configure.&lt;/p&gt;
+
+&lt;p&gt;Fast forward -»&amp;gt;
+Linux mint cinnamon was laggy atleast for me, i dont know why.
+even youtube playback for 720p video dropped frames a lot.
+did some googling can’t find anything useful, so i switched to xfce DE
+configured xfce-panel, whisker menu, installed xfce goodies etc.
+This took me while like 4-5 hours&lt;/p&gt;
+
+&lt;p&gt;i mainly had exprience with linux commandline, thanks to termux &amp;amp; arch arm
+before this i’ve only tried like 2 two times, that is once in virtual box &amp;amp; once in native machine
+didn’t really liked the exprience with VMs which is due to low spec laptop i have (HP notebook from 2016, i3 5th, 4Gb ram).&lt;/p&gt;
+
+&lt;p&gt;But when it comes to commandline, i never used powershell for node or python devlopment cause i really hate their
+lack of auto-completion &amp;amp; very long commands to do simple things like opening up a port &amp;amp; bypassing the firewall for incoming connections etc. I always linux cli with zsh &amp;amp; tmux, its ultimate combo if you’re power user/developer.&lt;/p&gt;
+
+&lt;p&gt;some annoying things are linux i found/ not figured out yet!
+are as follows:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;weird theming with chrome(probably caused by XFCE)&lt;/li&gt;
+  &lt;li&gt;inconsistent font size (maybe caused by misconfiguration from my side)&lt;/li&gt;
+  &lt;li&gt;scaling (XFCE bug/feature) only 1, or 2 not like 1.25 etc&lt;/li&gt;
+  &lt;li&gt;xfce terminal* (took 5 hours to replicate my setup from wsl2 ubuntu &amp;amp; windows terminal)&lt;/li&gt;
+  &lt;li&gt;Bluetooth GUI was not showing my dell mouse, but bluectl found it, still connects &amp;amp; disconnects like every 2s.&lt;/li&gt;
+  &lt;li&gt;webcam is not working!!!! thanks to acer &amp;amp; no drivers for it in linux&lt;/li&gt;
+  &lt;li&gt;mouse wheel scroll is very slow, third party stuff makes it worse (lookin at you imwheel)&lt;/li&gt;
+  &lt;li&gt;Way too much time taking to configure all these things.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;i’m a perfectionist (kinda) and i think my machine is now closing
+i can bear the pain for small things get some freedom from windows 11.&lt;/p&gt;
+
+&lt;p&gt;Now i fully configured xfce4-terminal which is i’m very proud of.
+features:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;select to copy&lt;/li&gt;
+  &lt;li&gt;crtl + v to paste&lt;/li&gt;
+  &lt;li&gt;tmux&lt;/li&gt;
+  &lt;li&gt;mouse support&lt;/li&gt;
+  &lt;li&gt;unicode support&lt;/li&gt;
+  &lt;li&gt;cmus&lt;/li&gt;
+  &lt;li&gt;cava&lt;/li&gt;
+  &lt;li&gt;lsd, bat, git-delta&lt;/li&gt;
+  &lt;li&gt;oh my zsh&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;btw replicating the same setup on macOS is way easier then linux. Because community &amp;amp; consistency of macOS
+things are stable &amp;amp; preconfigured in macOS, mostly its just download application &amp;amp; run it.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>Connecting the dots (Partially)</title>
    <link href="https://t4p4n.github.io/2022/12/17/connecting-the-dots-partially"/>
    <updated>2022-12-17T00:00:00+05:30</updated>
    <id>https://t4p4n.github.io/2022/12/17/connecting-the-dots-partially</id>
-   <content type="html">&lt;h1 id=&quot;connecting-the-dots-partially&quot;&gt;Connecting the dots (partially)&lt;/h1&gt;
-&lt;p&gt;I’m very happy to see how small things are coming together to help me in my day to day work life as a junior developer. My web dev journey as started in late 2020 which you read more about it &lt;a href=&quot;https://t4p4n.github.io/about/&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+   <content type="html">&lt;p&gt;I’m very happy to see how small things are coming together to help me in my day to day work life as a junior developer. My web dev journey as started in late 2020 which you read more about it &lt;a href=&quot;https://t4p4n.github.io/about/&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Before joining &lt;a href=&quot;https://storetools.io/&quot;&gt;storetools&lt;/a&gt;, i had some little experience as i completed my first book &lt;a href=&quot;https://www.packtpub.com/product/django-4-by-example-fourth-edition/9781801813051&quot;&gt;django 3 by example&lt;/a&gt;, it taught me &lt;a href=&quot;https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller&quot;&gt;MVC&lt;/a&gt; architecture , &lt;a href=&quot;https://en.wikipedia.org/wiki/Database&quot;&gt;Databases&lt;/a&gt;, Basic &lt;a href=&quot;https://en.wikipedia.org/wiki/Request%E2%80%93response&quot;&gt;request response&lt;/a&gt; cycle etc.  As well as django specific things like &lt;a href=&quot;https://docs.djangoproject.com/en/4.1/ref/templates/language/&quot;&gt;Django template language&lt;/a&gt;, &lt;a href=&quot;https://docs.djangoproject.com/en/4.1/topics/db/queries/&quot;&gt;Django ORM&lt;/a&gt;, Django admin panel, APIs with &lt;a href=&quot;https://www.django-rest-framework.org/&quot;&gt;Django Rest Framework&lt;/a&gt;. And also i got some more experience as I did few freelance projects with &lt;a href=&quot;https://b3nsh4.com&quot;&gt;Ben&lt;/a&gt;. We got to learn many things such as working on a legacy code of Django 2 version, Extending with out own ideas such as implementing online payments into a old Hostel management system. Working on chat application that we made in &lt;a href=&quot;https://flask.palletsprojects.com/en/2.2.x/&quot;&gt;flask&lt;/a&gt; &lt;a href=&quot;https://socket.io/&quot;&gt;socketio&lt;/a&gt; &amp;amp; &lt;a href=&quot;https://en.wikipedia.org/wiki/WebSocket&quot;&gt;websockets&lt;/a&gt;, that was my first intro to &lt;a href=&quot;https://en.wikipedia.org/wiki/Event-driven_architecture&quot;&gt;event driven&lt;/a&gt; programming.&lt;/p&gt;
 

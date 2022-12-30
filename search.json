@@ -1,6 +1,15 @@
 [
   
     {
+      "title"    : "Switched to linux",
+      "description" : "Switched to linux",
+      "category" : "",
+      "tags"     : "migration, linux",
+      "url"      : "/2022/12/30/switched-to-linux",
+      "date"     : "2022-12-30 00:00:00 +0530"
+    } ,
+  
+    {
       "title"    : "Connecting the dots (Partially)",
       "description" : "Connecting the dots (Partially)",
       "category" : "",
