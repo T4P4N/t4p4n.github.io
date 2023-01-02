@@ -1,6 +1,15 @@
 [
   
     {
+      "title"    : "XFCE tiling window manager",
+      "description" : "XFCE tiling window manager",
+      "category" : "",
+      "tags"     : "xfce, linux, tiling",
+      "url"      : "/2023/01/02/xfce-tiling",
+      "date"     : "2023-01-02 00:00:00 +0530"
+    } ,
+  
+    {
       "title"    : "Switched to linux",
       "description" : "Switched to linux",
       "category" : "",

@@ -4,13 +4,46 @@
  <title>T4P4N</title>
  <link href="https://t4p4n.github.io/atom.xml" rel="self"/>
  <link href="https://t4p4n.github.io/"/>
- <updated>2022-12-30T23:17:42+05:30</updated>
+ <updated>2023-01-02T23:06:31+05:30</updated>
  <id>https://t4p4n.github.io</id>
  <author>
    <name>Tapan Kashyap</name>
    <email>tapank415@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>XFCE tiling window manager</title>
+   <link href="https://t4p4n.github.io/2023/01/02/xfce-tiling"/>
+   <updated>2023-01-02T00:00:00+05:30</updated>
+   <id>https://t4p4n.github.io/2023/01/02/xfce-tiling</id>
+   <content type="html">&lt;h4 id=&quot;backstory&quot;&gt;Backstory&lt;/h4&gt;
+&lt;p&gt;its been like a week since i installed linux mint cinnamon (now xfce)
+i was looking on the internet to enable xfce’s inbuilt tiling feature from like past three days,
+all i found was mostly to just remap keys with like super + up, down, left, right etc.
+i’ve tried it maybe four times if i recall corrrectly. Somehow i stumbled upon this video today
+https://www.youtube.com/watch?v=TUHIbkwoyU8&lt;/p&gt;
+
+&lt;p&gt;i recommend to watch this video! if you have time!!!&lt;/p&gt;
+
+&lt;p&gt;Here’s the tldr;/text version of it.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Don&apos;t use map super key for anything, if it is already mapped to whisker menu&lt;/li&gt;
+  &lt;li&gt;Remap the keys from window manager -&amp;gt; keyboard with anything you like except super though&lt;/li&gt;
+  &lt;li&gt;QuickTip use alt key as most of us are used to use alt + tab to change window focus.&lt;/li&gt;
+  &lt;li&gt;QuickTip2 dont need install xcape for this (no need to add extra dependencies for simple stuff)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;heres-mine-keymapping-for-tiling&quot;&gt;Here’s mine keymapping for tiling.&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Super + numpad/keypad up, down, left, right for widow tiling&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://imgur.com/ai59JpD.png&quot;&gt;&lt;img src=&quot;https://imgur.com/ai59JpD.png&quot; alt=&quot;https://imgur.com/ai59JpD.png&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Switched to linux</title>
