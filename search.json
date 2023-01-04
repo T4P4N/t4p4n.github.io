@@ -1,6 +1,15 @@
 [
   
     {
+      "title"    : "Linux games list 2023",
+      "description" : "Classic Linux Games 2023 edition",
+      "category" : "",
+      "tags"     : "games, linux, foss",
+      "url"      : "/2023/01/03/linux-games-list-2023",
+      "date"     : "2023-01-03 00:00:00 +0530"
+    } ,
+  
+    {
       "title"    : "XFCE tiling window manager",
       "description" : "XFCE tiling window manager",
       "category" : "",

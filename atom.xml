@@ -4,13 +4,94 @@
  <title>T4P4N</title>
  <link href="https://t4p4n.github.io/atom.xml" rel="self"/>
  <link href="https://t4p4n.github.io/"/>
- <updated>2023-01-02T23:06:31+05:30</updated>
+ <updated>2023-01-04T20:50:36+05:30</updated>
  <id>https://t4p4n.github.io</id>
  <author>
    <name>Tapan Kashyap</name>
    <email>tapank415@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Linux games list 2023</title>
+   <link href="https://t4p4n.github.io/2023/01/03/linux-games-list-2023"/>
+   <updated>2023-01-03T00:00:00+05:30</updated>
+   <id>https://t4p4n.github.io/2023/01/03/linux-games-list-2023</id>
+   <content type="html">&lt;h4 id=&quot;backstory&quot;&gt;Backstory&lt;/h4&gt;
+&lt;p&gt;I was looking for foss some games for linux, but couldn’t not able find unique ones.
+so here’s what i aggregated from different sources:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://cxong.github.io/cdogs-sdl/&quot;&gt;C-dogs or cyberdogs&lt;/a&gt; top-down shooter, rouguelike&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://sourceforge.net/projects/corsixth.mirror/&quot;&gt;CorsixTH&lt;/a&gt; simulation, tycoon, hospital&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://blobbyvolley.de/&quot;&gt;Blobby Volley&lt;/a&gt; volley ball, sports, arcade&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://sourceforge.net/projects/lgames/&quot;&gt;L-games&lt;/a&gt; classics, bundle, puzzle, arcade&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://dhewm3.org/&quot;&gt;dhewm&lt;/a&gt; Doom 3, Classic&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://vdrift.net/&quot;&gt;VDrift&lt;/a&gt; racing, simulation&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.openlierox.net/&quot;&gt;OpenLieroX&lt;/a&gt; artillery, shoot’em up, worms, liero&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://sourceforge.net/projects/urquanmastershd/&quot;&gt;Uruanmastershd&lt;/a&gt; remake, star control 2&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://sourceforge.net/projects/dangerdeep/&quot;&gt;Danger from the deep&lt;/a&gt; submarine, simulation&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://sourceforge.net/projects/scorched3d/&quot;&gt;Scorched 3D&lt;/a&gt; artillery&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://trigger-rally.sourceforge.io/&quot;&gt;Trigger Rally&lt;/a&gt; racing, simulation, 3d, rally&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/miki151/keeperrl&quot;&gt;KeeperRL&lt;/a&gt; rouguelike, dungeon&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://pokerth.net/&quot;&gt;PokerTH&lt;/a&gt; poker, card&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://megamek.org/&quot;&gt;Megamek&lt;/a&gt; artillery, strategy, turn-based, battletech, fighting&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chromium-bsu.sourceforge.io/&quot;&gt;Chromium BSU&lt;/a&gt; top-scrolling shooter, shoot’em up, space&lt;/li&gt;
+  &lt;li&gt;Not written in electron or js btw, so dont judge by name :)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;recommendedi-like-to-play&quot;&gt;Recommended/I like to play&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://dopewars.sourceforge.io/&quot;&gt;Dope Wars&lt;/a&gt; trading, drugs, simulation, tycoon, classic&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.artsoft.org/&quot;&gt;Rocks n Diamonds&lt;/a&gt; boulder dash, puzzle, classic&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/suomipelit/ultimatetapankaikki&quot;&gt;Ultimate tapan kaikki&lt;/a&gt; top-down shooter, fight, classic dos, my name in it ;) .&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://tuxfootball.sourceforge.net/&quot;&gt;Tux-Football&lt;/a&gt; soccer, sports, football&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://shatteredpixel.com/&quot;&gt;Shattered Pixel Dungeon&lt;/a&gt; rouguelike, dungeon, pixel, 2d&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;terminal&quot;&gt;Terminal&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.seehuhn.de/pages/moon-buggy&quot;&gt;moon-buggy&lt;/a&gt; jumping, running, space&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Thynix/Cavez-of-Phear&quot;&gt;cavez of phear&lt;/a&gt; boulder dash, clone&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;references&quot;&gt;References:&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://sourceforge.net/directory/games-entertainment/linux&quot;&gt;https://sourceforge.net/directory/games-entertainment/linux&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Linux_gaming&quot;&gt;https://en.wikipedia.org/wiki/Linux_gaming&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/List_of_open-source_video_games&quot;&gt;https://en.wikipedia.org/wiki/List_of_open-source_video_games&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blends.debian.org/games/tasks/&quot;&gt;https://blends.debian.org/games/tasks/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://wiki.debian.org/Game&quot;&gt;https://wiki.debian.org/Game&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
  
  <entry>
    <title>XFCE tiling window manager</title>

@@ -17,6 +17,30 @@
 "items": [
     
         {
+            "id": "https://t4p4n.github.io/2023/01/03/linux-games-list-2023",
+            "title": "Linux games list 2023",
+            "summary": "Classic Linux Games 2023 edition",
+            "content_text": "BackstoryI was looking for foss some games for linux, but couldn’t not able find unique ones.so here’s what i aggregated from different sources:      C-dogs or cyberdogs top-down shooter, rouguelike        CorsixTH simulation, tycoon, hospital        Blobby Volley volley ball, sports, arcade        L-games classics, bundle, puzzle, arcade        dhewm Doom 3, Classic        VDrift racing, simulation        OpenLieroX artillery, shoot’em up, worms, liero        Uruanmastershd remake, star control 2        Danger from the deep submarine, simulation        Scorched 3D artillery        Trigger Rally racing, simulation, 3d, rally        KeeperRL rouguelike, dungeon        PokerTH poker, card        Megamek artillery, strategy, turn-based, battletech, fighting    Chromium BSU top-scrolling shooter, shoot’em up, space  Not written in electron or js btw, so dont judge by name :)Recommended/I like to play  Dope Wars trading, drugs, simulation, tycoon, classic  Rocks n Diamonds boulder dash, puzzle, classic  Ultimate tapan kaikki top-down shooter, fight, classic dos, my name in it ;) .  Tux-Football soccer, sports, football  Shattered Pixel Dungeon rouguelike, dungeon, pixel, 2dTerminal  moon-buggy jumping, running, space  cavez of phear boulder dash, cloneReferences:  https://sourceforge.net/directory/games-entertainment/linux  https://en.wikipedia.org/wiki/Linux_gaming  https://en.wikipedia.org/wiki/List_of_open-source_video_games  https://blends.debian.org/games/tasks/  https://wiki.debian.org/Game",
+            "content_html": "<h4 id=\"backstory\">Backstory</h4><p>I was looking for foss some games for linux, but couldn’t not able find unique ones.so here’s what i aggregated from different sources:</p><ul>  <li>    <p><a href=\"https://cxong.github.io/cdogs-sdl/\">C-dogs or cyberdogs</a> top-down shooter, rouguelike</p>  </li>  <li>    <p><a href=\"https://sourceforge.net/projects/corsixth.mirror/\">CorsixTH</a> simulation, tycoon, hospital</p>  </li>  <li>    <p><a href=\"http://blobbyvolley.de/\">Blobby Volley</a> volley ball, sports, arcade</p>  </li>  <li>    <p><a href=\"https://sourceforge.net/projects/lgames/\">L-games</a> classics, bundle, puzzle, arcade</p>  </li>  <li>    <p><a href=\"https://dhewm3.org/\">dhewm</a> Doom 3, Classic</p>  </li>  <li>    <p><a href=\"http://vdrift.net/\">VDrift</a> racing, simulation</p>  </li>  <li>    <p><a href=\"https://www.openlierox.net/\">OpenLieroX</a> artillery, shoot’em up, worms, liero</p>  </li>  <li>    <p><a href=\"https://sourceforge.net/projects/urquanmastershd/\">Uruanmastershd</a> remake, star control 2</p>  </li>  <li>    <p><a href=\"https://sourceforge.net/projects/dangerdeep/\">Danger from the deep</a> submarine, simulation</p>  </li>  <li>    <p><a href=\"https://sourceforge.net/projects/scorched3d/\">Scorched 3D</a> artillery</p>  </li>  <li>    <p><a href=\"https://trigger-rally.sourceforge.io/\">Trigger Rally</a> racing, simulation, 3d, rally</p>  </li>  <li>    <p><a href=\"https://github.com/miki151/keeperrl\">KeeperRL</a> rouguelike, dungeon</p>  </li>  <li>    <p><a href=\"https://pokerth.net/\">PokerTH</a> poker, card</p>  </li>  <li>    <p><a href=\"https://megamek.org/\">Megamek</a> artillery, strategy, turn-based, battletech, fighting</p>  </li>  <li><a href=\"https://chromium-bsu.sourceforge.io/\">Chromium BSU</a> top-scrolling shooter, shoot’em up, space</li>  <li>Not written in electron or js btw, so dont judge by name :)</li></ul><h4 id=\"recommendedi-like-to-play\">Recommended/I like to play</h4><ul>  <li><a href=\"https://dopewars.sourceforge.io/\">Dope Wars</a> trading, drugs, simulation, tycoon, classic</li>  <li><a href=\"https://www.artsoft.org/\">Rocks n Diamonds</a> boulder dash, puzzle, classic</li>  <li><a href=\"https://github.com/suomipelit/ultimatetapankaikki\">Ultimate tapan kaikki</a> top-down shooter, fight, classic dos, my name in it ;) .</li>  <li><a href=\"https://tuxfootball.sourceforge.net/\">Tux-Football</a> soccer, sports, football</li>  <li><a href=\"https://shatteredpixel.com/\">Shattered Pixel Dungeon</a> rouguelike, dungeon, pixel, 2d</li></ul><h4 id=\"terminal\">Terminal</h4><ul>  <li><a href=\"https://www.seehuhn.de/pages/moon-buggy\">moon-buggy</a> jumping, running, space</li>  <li><a href=\"https://github.com/Thynix/Cavez-of-Phear\">cavez of phear</a> boulder dash, clone</li></ul><h4 id=\"references\">References:</h4><ul>  <li><a href=\"https://sourceforge.net/directory/games-entertainment/linux\">https://sourceforge.net/directory/games-entertainment/linux</a></li>  <li><a href=\"https://en.wikipedia.org/wiki/Linux_gaming\">https://en.wikipedia.org/wiki/Linux_gaming</a></li>  <li><a href=\"https://en.wikipedia.org/wiki/List_of_open-source_video_games\">https://en.wikipedia.org/wiki/List_of_open-source_video_games</a></li>  <li><a href=\"https://blends.debian.org/games/tasks/\">https://blends.debian.org/games/tasks/</a></li>  <li><a href=\"https://wiki.debian.org/Game\">https://wiki.debian.org/Game</a></li></ul>",
+            "url": "https://t4p4n.github.io/2023/01/03/linux-games-list-2023",
+            
+            
+            
+            "tags": ["games","linux","foss"],
+            
+            "date_published": "2023-01-03T00:00:00+05:30",
+            "date_modified": "2023-01-03T00:00:00+05:30",
+            
+                "author":  {
+                "name": "Tapan Kashyap",
+                "url": null,
+                "avatar": null
+                }
+                
+            
+        },
+    
+        {
             "id": "https://t4p4n.github.io/2023/01/02/xfce-tiling",
             "title": "XFCE tiling window manager",
             "summary": "XFCE tiling window manager",
