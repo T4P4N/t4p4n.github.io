@@ -4,13 +4,81 @@
  <title>T4P4N</title>
  <link href="https://t4p4n.github.io/atom.xml" rel="self"/>
  <link href="https://t4p4n.github.io/"/>
- <updated>2023-08-15T12:10:53+05:30</updated>
+ <updated>2023-12-31T14:52:47+05:30</updated>
  <id>https://t4p4n.github.io</id>
  <author>
    <name>Tapan Kashyap</name>
    <email>tapank415@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>My 2023 wrap up</title>
+   <link href="https://t4p4n.github.io/2023/12/31/my-2023-wrap-up"/>
+   <updated>2023-12-31T00:00:00+05:30</updated>
+   <id>https://t4p4n.github.io/2023/12/31/my-2023-wrap-up</id>
+   <content type="html">&lt;p&gt;This one is on my year 2023 review and how things went this year in my work &amp;amp; personal life.&lt;/p&gt;
+
+&lt;h3 id=&quot;work-life&quot;&gt;Work life&lt;/h3&gt;
+
+&lt;p&gt;Starting from work life, i think i was fairly consistent this year when it comes to code contributions. This year i was able to master nestjs &amp;amp; prisma &amp;amp; react &amp;amp; went dive enough that i can figure out things on my own if enough time is given to me.&lt;/p&gt;
+
+&lt;p&gt;And now i also occaisonally go in source code of the libs to figure out how things are working behind fancy methods that a lib provides. Like last month i went a bit deep in shopify api js lib to figure out a server crash which was happening when using shopify api js lib for sessions turns out it was a lack of try catch block in our middleware.&lt;/p&gt;
+
+&lt;p&gt;And speaking of communication skills, i think i improved a lot. Now i can handle a meeting as a host for 4 teammates (including me), And previously i used to get frozen few times &amp;amp; mind goes blank when explaining a idea or a problem in front of my teammates. But now i also use a hack, which is to take notes before (if your the host) and after any meeting. And also i can help my teammates in debugging &amp;amp; brainstorming ideas and problems when needed by pairing via slack huddle or gmeet.&lt;/p&gt;
+
+&lt;p&gt;And one skill which i learned from handling customer support is to make reasonable yet ambigious promises for feature requests &amp;amp; bugfixes, from a developer prespective we never know how much time somethinig will take, so we ask for atleast 2 days even if the work is about 2 hours cause the code change needs to go through these phases, starting from the code review &amp;gt; manual testing &amp;gt; approval (if everything is ok) &amp;gt; staging (last manual test) finally release if everything is alright &amp;amp; monitoring the server &amp;amp; informing the client. And these things take time as usual so we need take this time into consideration.&lt;/p&gt;
+
+&lt;p&gt;Speaking to clients on call, like 99.9% users are generally very good &amp;amp; polite and dealing with them is easy for me. But Dealing with 0.1% is a bit daunting for me so i let my senior to deal with them.&lt;/p&gt;
+
+&lt;p&gt;All in all this year was turned out to be pretty great for me. We developed &amp;amp; launched around 4 apps which is not many but we explored other horizons too.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/qlLIAcm.jpg&quot;&gt;&lt;img src=&quot;https://i.imgur.com/qlLIAcm.jpg&quot; alt=&quot;https://i.imgur.com/qlLIAcm.jpg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;personal-life&quot;&gt;Personal Life&lt;/h3&gt;
+
+&lt;p&gt;One goal of mine was to focus on fitness, which i missed it entirely this year.&lt;/p&gt;
+
+&lt;p&gt;And also the diet even though i follow a strict vegetarian diet but i ate quite less this year, compared to last year. The reason for this is possibly due to my habit of sitting too long &amp;amp; not taking enough breaks while working, and this resulted in lack of appetite.&lt;/p&gt;
+
+&lt;p&gt;So for the next year i’ll be focusing on regular excercising &amp;amp; try to put on atleast some amount of muscle.&lt;/p&gt;
+
+&lt;p&gt;And also one thing which i’m doing from past 2 years is to nightwalk and this year I was fairly consistent and walked for 4Kms or 5k steps almost daily. Here are some of pics i clicked this year:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/408469s.jpg&quot;&gt;&lt;img src=&quot;https://i.imgur.com/408469s.jpg&quot; alt=&quot;https://i.imgur.com/408469s.jpg&quot; /&gt;&lt;/a&gt;
+(01/07/2023, 09:29 pm) A chill night in smoking hot weather of delhi with AQI less than 100 &amp;amp; cold breeze flowing through paddy fields, one of the best day of year 2023&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/wCHb6Jr.jpg&quot;&gt;&lt;img src=&quot;https://i.imgur.com/wCHb6Jr.jpg&quot; alt=&quot;https://i.imgur.com/wCHb6Jr.jpg&quot; /&gt;&lt;/a&gt;
+(18/12/2023, 08:40pm) A cold night &amp;amp; a empty road with good AQI, few dogs walking with us after dinner.&lt;/p&gt;
+
+&lt;h4 id=&quot;learnings-this-year-personal&quot;&gt;Learnings this year (personal)&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Understanding power dynamics in family relations &amp;amp; making sure that no one will take any advantage of me.&lt;/li&gt;
+  &lt;li&gt;Keeping distance from toxic people and not letting interfere with my life decisions.&lt;/li&gt;
+  &lt;li&gt;Not chasing desires &amp;amp; people, desires come &amp;amp; go and same with people, and i don’t try to chase them, and i try to go with the flow.&lt;/li&gt;
+  &lt;li&gt;Understanding my responsiblities &amp;amp; trying to reduce them gradually.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These were the few of major points which i learned this year,
+And there are few things which i’ve done first time in my life:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Travelling to bikaner (450kms) via train&lt;/li&gt;
+  &lt;li&gt;Walking 20k steps in one day, (was attending &amp;amp; assisting in a wedding ceremony)&lt;/li&gt;
+  &lt;li&gt;Buying shoes for myself (lols i don’t like wearing shoes but i brought &amp;amp; wore them because of wedding ceremony)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Thank you very much for reading till the end. And Have a nice day.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Migrating from prisma to kysely (nestjs)</title>
