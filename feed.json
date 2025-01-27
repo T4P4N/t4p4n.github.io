@@ -17,6 +17,30 @@
 "items": [
     
         {
+            "id": "https://t4p4n.github.io/2025/01/28/switch-git-users-like-ninja",
+            "title": "Switch git user like a ninja",
+            "summary": null,
+            "content_text": "  Sometimes it feels weird when you accidentally committed from work user to a personal repo.But no more now you can use this quick snippet to switch users with ease.git-user-switch(){\tuser1=\"T4P4N\"\temail1=\"tapank415@gmail.com\"\tuser2=\"tapan-storetools\"\temail2=\"tapan@storetools.io\"\techo \"Select a Git user:\"\techo \"1. $user1\"\techo \"2. $user2\"\techo -n \" \"\tread choice\tif [ \"$choice\" -eq 1 ]; then\t    git config --global --replace-all user.name \"$user1\"\t    git config --global --replace-all user.email \"$email1\"\t    echo \"Git user set to $user1\"\telif [ \"$choice\" -eq 2 ]; then\t    git config --global --replace-all user.name \"$user2\"\t    git config --global --replace-all user.email \"$email2\"\t    echo \"Git user set to $user2\"\telse\t    echo \"Invalid choice. Please choose 1 or 2.\"\tfi}Still what about existing commits?No worries use this git cmd to own your commit:git commit --amend --reset-author --no-edit",
+            "content_html": "<ul>  <li>Sometimes it feels weird when you accidentally committed from work user to a personal repo.But no more now you can use this quick snippet to switch users with ease.</li></ul><div class=\"language-bash highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code>git-user-switch<span class=\"o\">(){</span>\t<span class=\"nv\">user1</span><span class=\"o\">=</span><span class=\"s2\">\"T4P4N\"</span>\t<span class=\"nv\">email1</span><span class=\"o\">=</span><span class=\"s2\">\"tapank415@gmail.com\"</span>\t<span class=\"nv\">user2</span><span class=\"o\">=</span><span class=\"s2\">\"tapan-storetools\"</span>\t<span class=\"nv\">email2</span><span class=\"o\">=</span><span class=\"s2\">\"tapan@storetools.io\"</span>\t<span class=\"nb\">echo</span> <span class=\"s2\">\"Select a Git user:\"</span>\t<span class=\"nb\">echo</span> <span class=\"s2\">\"1. </span><span class=\"nv\">$user1</span><span class=\"s2\">\"</span>\t<span class=\"nb\">echo</span> <span class=\"s2\">\"2. </span><span class=\"nv\">$user2</span><span class=\"s2\">\"</span>\t<span class=\"nb\">echo</span> <span class=\"nt\">-n</span> <span class=\"s2\">\" \"</span>\t<span class=\"nb\">read </span>choice\t<span class=\"k\">if</span> <span class=\"o\">[</span> <span class=\"s2\">\"</span><span class=\"nv\">$choice</span><span class=\"s2\">\"</span> <span class=\"nt\">-eq</span> 1 <span class=\"o\">]</span><span class=\"p\">;</span> <span class=\"k\">then\t    </span>git config <span class=\"nt\">--global</span> <span class=\"nt\">--replace-all</span> user.name <span class=\"s2\">\"</span><span class=\"nv\">$user1</span><span class=\"s2\">\"</span>\t    git config <span class=\"nt\">--global</span> <span class=\"nt\">--replace-all</span> user.email <span class=\"s2\">\"</span><span class=\"nv\">$email1</span><span class=\"s2\">\"</span>\t    <span class=\"nb\">echo</span> <span class=\"s2\">\"Git user set to </span><span class=\"nv\">$user1</span><span class=\"s2\">\"</span>\t<span class=\"k\">elif</span> <span class=\"o\">[</span> <span class=\"s2\">\"</span><span class=\"nv\">$choice</span><span class=\"s2\">\"</span> <span class=\"nt\">-eq</span> 2 <span class=\"o\">]</span><span class=\"p\">;</span> <span class=\"k\">then\t    </span>git config <span class=\"nt\">--global</span> <span class=\"nt\">--replace-all</span> user.name <span class=\"s2\">\"</span><span class=\"nv\">$user2</span><span class=\"s2\">\"</span>\t    git config <span class=\"nt\">--global</span> <span class=\"nt\">--replace-all</span> user.email <span class=\"s2\">\"</span><span class=\"nv\">$email2</span><span class=\"s2\">\"</span>\t    <span class=\"nb\">echo</span> <span class=\"s2\">\"Git user set to </span><span class=\"nv\">$user2</span><span class=\"s2\">\"</span>\t<span class=\"k\">else\t    </span><span class=\"nb\">echo</span> <span class=\"s2\">\"Invalid choice. Please choose 1 or 2.\"</span>\t<span class=\"k\">fi</span><span class=\"o\">}</span></code></pre></div></div><p>Still what about existing commits?No worries use this git cmd to own your commit:</p><p><code class=\"language-plaintext highlighter-rouge\">git commit --amend --reset-author --no-edit</code></p>",
+            "url": "https://t4p4n.github.io/2025/01/28/switch-git-users-like-ninja",
+            
+            
+            
+            "tags": ["git","linux","bash"],
+            
+            "date_published": "2025-01-28T00:00:00+05:30",
+            "date_modified": "2025-01-28T00:00:00+05:30",
+            
+                "author":  {
+                "name": "Tapan Kashyap",
+                "url": null,
+                "avatar": null
+                }
+                
+            
+        },
+    
+        {
             "id": "https://t4p4n.github.io/2024/12/11/2024-year-in-review",
             "title": "2024 Year in review",
             "summary": null,
