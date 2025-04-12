@@ -1,6 +1,24 @@
 [
   
     {
+      "title"    : "Is AI going to take over junior software dev jobs?",
+      "description" : "",
+      "category" : "",
+      "tags"     : "AI, thoughts",
+      "url"      : "/2025/04/12/is-ai-going-to-take-over-junior-software-dev-jobs",
+      "date"     : "2025-04-12 00:00:00 +0530"
+    } ,
+  
+    {
+      "title"    : "mDNS (multicast DNS)",
+      "description" : "",
+      "category" : "",
+      "tags"     : "mDNS, linux, networking",
+      "url"      : "/2025/03/12/mdns",
+      "date"     : "2025-03-12 00:00:00 +0530"
+    } ,
+  
+    {
       "title"    : "Switch git user like a ninja",
       "description" : "",
       "category" : "",
