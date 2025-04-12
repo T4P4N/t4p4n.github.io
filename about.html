@@ -4,7 +4,9 @@ layout: default
 
 <section class="post">
   <div class="flex-row-between">
-    <a href="{{ site.url }}{{ site.baseurl }}"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+    <a href="{{ site.url }}{{ site.baseurl }}"
+      ><i class="fa fa-home" aria-hidden="true"></i> Home</a
+    >
     <button title="Change theme" id="theme-toggle" onclick="modeSwitcher()">
       <div></div>
     </button>
@@ -12,68 +14,82 @@ layout: default
 </section>
 
 <section>
-    <!-- The Timeline -->
+  <ul class="timeline">
+    <li>
+      <div class="direction-r">
+        <div class="flag-wrapper">
+          <span class="flag">Building Products</span>
+          <span class="time-wrapper"
+            ><span class="time">2022 - Present</span></span
+          >
+        </div>
+        <div class="desc">
+          In July 2022, I joined
+          <a href="https://helloastral.com"> Astral Commerce </a>
+          formerly <a href="https://storetools.io">storetools</a> as fullstack
+          engineer, In the first two months or so i learned & worked with ruby
+          and ruby on rails. Later switched to nestjs & react along with prisma.
+          Nowadays i'm working with remix mostly, Currently i'm developing &
+          maintaining the following shopify apps:
+          <br />
+          <a href="https://helloastral.com/apps/gst-pro"> GST Pro </a>
 
-    <ul class="timeline">
-        <li>
-            <div class="direction-r">
-                <div class="flag-wrapper">
-                    <span class="flag">Building Products</span>
-                    <span class="time-wrapper"><span class="time">2022 - Present</span></span>
-                </div>
-                <div class="desc">
-                    After learning all these frameworks & languages now its time to utilize them to create real world projects
-                     that solves real world problems. Let's see how this goes.
-                </div>
-            </div>
-        </li>
+          <br />
+          <a href="https://helloastral.com/apps/pixi"> Pixi Order Printer </a>
 
-        <li>
-            <div class="direction-l">
-                <div class="flag-wrapper">
-                    <span class="flag">Full Stack Web Developer</span>
-                    <span class="time-wrapper"><span class="time">2020 - 2021</span></span>
-                </div>
-                <div class="desc">
-                    In the late 2020, I started learning about web application backend programming,
-                    Where I found Django since i already knew python which learned in 2018 to help me
-                    in writing Proof of Concept for bug reports. After Learning django from a book named
-                    Django3 by example by Antonio Melé. I started working on my own projects, where i found 
-                    a need to learn more about interactive frontend using javascript, I  started learning about 
-                    React but it was too hard for so grabbed another book named The road to react by Robin Wieruch
-                    which i completed it in last year.
-                </div>
-            </div>
-        </li>
+          <br />
+          <a href="https://apps.shopify.com/direct-checkout-qr-links">
+            Direct Checkout
+          </a>
 
-        <li>
-            <div class="direction-r">
-                <div class="flag-wrapper">
-                    <span class="flag">CyberSecurity</span>
-                    <span class="time-wrapper"><span class="time">2017 - 2020</span></span>
-                </div>
-                <div class="desc">
-                    After completing my highschool i started learning about cybersecurity from OWASP
-                    where i learned about web security fundamentals & testing methodologies for various
-                    vulnerabilities & started testing web applications of many Big tech giants like Xiaomi.
-                    <a href="#" target="_top">Link to xiaomi src & hackerone</a>
-                </div>
-            </div>
-        </li>
+          <br />
+          <a href="https://apps.shopify.com/valet-theme-scheduler">
+            Valet theme manager
+          </a>
+        </div>
+      </div>
+    </li>
 
-     
-<!-- 
-        <li>
-            <div class="direction-l">
-                <div class="flag-wrapper">
-                    <span class="flag"></span>
-                    <span class="time-wrapper"><span class="time">2010 - 2012</span></span>
-                </div>
-                <div class="desc">
-                </div>
-            </div>
-        </li> -->
+    <li>
+      <div class="direction-l">
+        <div class="flag-wrapper">
+          <span class="flag">Webdev</span>
+          <span class="time-wrapper"
+            ><span class="time">2020 - 2021</span></span
+          >
+        </div>
+        <div class="desc">
+          In the late 2020, I started learning about web development, Where I
+          found Django since i already knew python, which i learned in 2018 to
+          help me in bug bounty & writing scripts and PoCs for security bugs.
+          After Learning django from a book named Django3 by example by Antonio
+          Melé. I did some freelance work together with my friend
+          <a href="https://b3nsh4.com">ben</a> After that i got curious about
+          frontend and some stumbled upon React Docs but it was too hard &
+          confusing for me so grabbed another book named The road to react by
+          Robin Wieruch which i completed it in 2021.
+        </div>
+      </div>
+    </li>
 
-    </ul>
-
+    <li>
+      <div class="direction-r">
+        <div class="flag-wrapper">
+          <span class="flag">Infosec</span>
+          <span class="time-wrapper"
+            ><span class="time">2017 - 2020</span></span
+          >
+        </div>
+        <div class="desc">
+          After completing my highschool i started learning about cybersecurity
+          from OWASP where i learned about web security fundamentals & testing
+          methodologies for various vulnerabilities & started testing
+          applications of many Big tech giants like Xiaomi.
+          <a href="https://hackerone.com/t4p4n" target="_top"
+            >Link to Hackerone</a
+          >
+        </div>
+      </div>
+    </li>
+  </ul>
 </section>

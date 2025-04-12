@@ -640,13 +640,13 @@ $link-color: var(--link-color);
     content: ' ';
     display: block;
     width: 6px;
-    height:120%;
+    height: 100%;
     border-radius: 0 0 3px 3px;
     margin-left: -3px;
     background: var(--light-text-color);
     z-index: 5;
     @media(max-width: 375px) {
-      height: 150%;
+      height: 100%;
     }
   }
   li {
@@ -657,7 +657,6 @@ $link-color: var(--link-color);
     &::after {
       content: "";
       display: block;
-      //height: 150%;
       clear: both;
       visibility: hidden;
     }
