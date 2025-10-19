@@ -4,13 +4,81 @@
  <title>T4P4N</title>
  <link href="https://t4p4n.github.io/atom.xml" rel="self"/>
  <link href="https://t4p4n.github.io/"/>
- <updated>2025-04-12T23:03:55+05:30</updated>
+ <updated>2025-10-19T14:31:41+05:30</updated>
  <id>https://t4p4n.github.io</id>
  <author>
    <name>Tapan Kashyap</name>
    <email>tapank415@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Debugging high memory usage</title>
+   <link href="https://t4p4n.github.io/2025/10/19/debugging-high-memory-usage"/>
+   <updated>2025-10-19T00:00:00+05:30</updated>
+   <id>https://t4p4n.github.io/2025/10/19/debugging-high-memory-usage</id>
+   <content type="html">&lt;h2 id=&quot;step-1-identify-where-its-happening&quot;&gt;Step 1: Identify Where It’s Happening&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The first step is to figure out where the memory issue is occurring.&lt;/li&gt;
+  &lt;li&gt;It could be due to anything, e.g. an internal library, queues, or your own code.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Here’s what I did:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Add logs everywhere to track the flow of function calls.&lt;/li&gt;
+  &lt;li&gt;Perform some potentially heavy actions (e.g., processing large amounts of data). In my case, it was report generation.&lt;/li&gt;
+  &lt;li&gt;If you still haven’t found the action causing the memory leak, look elsewhere:
+    &lt;ul&gt;
+      &lt;li&gt;Check production logs and metrics.&lt;/li&gt;
+      &lt;li&gt;Observe the timeline for when memory usage spikes.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Repeat this process until you’ve pin pointed the action that causes the memory leak or server crash. Then move to Step 2.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;step-2-track-function-calls-and-memory-usage&quot;&gt;Step 2: Track Function Calls and Memory Usage&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Once you’ve found the problematic action, trace the function calls involved.&lt;/li&gt;
+  &lt;li&gt;Add more logging and monitor memory usage closely.
+    &lt;ul&gt;
+      &lt;li&gt;You can log memory stats to a file along with timestamps.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Document the steps needed to reproduce the issue consistently.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;step-3-inspect-further&quot;&gt;Step 3: Inspect further&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Check if you’re adding too many items to arrays. If so, consider using batching or chunking to avoid (OOM) errors.&lt;/li&gt;
+  &lt;li&gt;Inspect any streams or buffers in use.&lt;/li&gt;
+  &lt;li&gt;Review filesystem related operations (e.g., &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fs.read&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fs.write&lt;/code&gt;) to ensure they’re being used correctly.&lt;/li&gt;
+  &lt;li&gt;Take note of idle memory usage (when OOM is &lt;em&gt;not&lt;/em&gt; happening) for comparison.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;step-4-optimize-the-root-cause&quot;&gt;Step 4: Optimize the Root Cause&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;At this point, you’ve narrowed the issue down to a specific function or section of code. Now it’s time to optimize it.&lt;/li&gt;
+  &lt;li&gt;Optimization is usually subjective and comes with trade offs.
+    &lt;ul&gt;
+      &lt;li&gt;Discuss with your team to find a good balance between memory usage and performance.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In my case, the culprit was &lt;strong&gt;SheetJS&lt;/strong&gt;, which caused memory leaks when reading a huge file. I replaced it with &lt;strong&gt;ExcelJS&lt;/strong&gt; using streaming writes. I also implemented an &lt;strong&gt;async generator function&lt;/strong&gt; to further reduce memory usage while reading a large the JSONL file, which i use to generate the report.&lt;/p&gt;
+
+&lt;p&gt;Most of your time will likely be spent on debugging. Once the issue is found and reliably reproducible, resolving it becomes much easier.&lt;/p&gt;
+
+&lt;p&gt;That’s it for this one!&lt;/p&gt;
+
+&lt;p&gt;Thanks for reading, and happy debugging! 😊&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Is AI going to take over junior software dev jobs?</title>

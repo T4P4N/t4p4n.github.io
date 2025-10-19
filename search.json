@@ -1,6 +1,15 @@
 [
   
     {
+      "title"    : "Debugging high memory usage",
+      "description" : "",
+      "category" : "",
+      "tags"     : "memory, nodejs, oom, programming, debugging",
+      "url"      : "/2025/10/19/debugging-high-memory-usage",
+      "date"     : "2025-10-19 00:00:00 +0530"
+    } ,
+  
+    {
       "title"    : "Is AI going to take over junior software dev jobs?",
       "description" : "",
       "category" : "",

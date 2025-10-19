@@ -17,6 +17,30 @@
 "items": [
     
         {
+            "id": "https://t4p4n.github.io/2025/10/19/debugging-high-memory-usage",
+            "title": "Debugging high memory usage",
+            "summary": null,
+            "content_text": "Step 1: Identify Where It’s Happening  The first step is to figure out where the memory issue is occurring.  It could be due to anything, e.g. an internal library, queues, or your own code.Here’s what I did:  Add logs everywhere to track the flow of function calls.  Perform some potentially heavy actions (e.g., processing large amounts of data). In my case, it was report generation.  If you still haven’t found the action causing the memory leak, look elsewhere:          Check production logs and metrics.      Observe the timeline for when memory usage spikes.        Repeat this process until you’ve pin pointed the action that causes the memory leak or server crash. Then move to Step 2.Step 2: Track Function Calls and Memory Usage  Once you’ve found the problematic action, trace the function calls involved.  Add more logging and monitor memory usage closely.          You can log memory stats to a file along with timestamps.        Document the steps needed to reproduce the issue consistently.Step 3: Inspect further  Check if you’re adding too many items to arrays. If so, consider using batching or chunking to avoid (OOM) errors.  Inspect any streams or buffers in use.  Review filesystem related operations (e.g., fs.read, fs.write) to ensure they’re being used correctly.  Take note of idle memory usage (when OOM is not happening) for comparison.Step 4: Optimize the Root Cause  At this point, you’ve narrowed the issue down to a specific function or section of code. Now it’s time to optimize it.  Optimization is usually subjective and comes with trade offs.          Discuss with your team to find a good balance between memory usage and performance.      In my case, the culprit was SheetJS, which caused memory leaks when reading a huge file. I replaced it with ExcelJS using streaming writes. I also implemented an async generator function to further reduce memory usage while reading a large the JSONL file, which i use to generate the report.Most of your time will likely be spent on debugging. Once the issue is found and reliably reproducible, resolving it becomes much easier.That’s it for this one!Thanks for reading, and happy debugging! 😊",
+            "content_html": "<h2 id=\"step-1-identify-where-its-happening\">Step 1: Identify Where It’s Happening</h2><ul>  <li>The first step is to figure out where the memory issue is occurring.</li>  <li>It could be due to anything, e.g. an internal library, queues, or your own code.</li></ul><p>Here’s what I did:</p><ul>  <li>Add logs everywhere to track the flow of function calls.</li>  <li>Perform some potentially heavy actions (e.g., processing large amounts of data). In my case, it was report generation.</li>  <li>If you still haven’t found the action causing the memory leak, look elsewhere:    <ul>      <li>Check production logs and metrics.</li>      <li>Observe the timeline for when memory usage spikes.</li>    </ul>  </li>  <li>Repeat this process until you’ve pin pointed the action that causes the memory leak or server crash. Then move to Step 2.</li></ul><h2 id=\"step-2-track-function-calls-and-memory-usage\">Step 2: Track Function Calls and Memory Usage</h2><ul>  <li>Once you’ve found the problematic action, trace the function calls involved.</li>  <li>Add more logging and monitor memory usage closely.    <ul>      <li>You can log memory stats to a file along with timestamps.</li>    </ul>  </li>  <li>Document the steps needed to reproduce the issue consistently.</li></ul><h2 id=\"step-3-inspect-further\">Step 3: Inspect further</h2><ul>  <li>Check if you’re adding too many items to arrays. If so, consider using batching or chunking to avoid (OOM) errors.</li>  <li>Inspect any streams or buffers in use.</li>  <li>Review filesystem related operations (e.g., <code class=\"language-plaintext highlighter-rouge\">fs.read</code>, <code class=\"language-plaintext highlighter-rouge\">fs.write</code>) to ensure they’re being used correctly.</li>  <li>Take note of idle memory usage (when OOM is <em>not</em> happening) for comparison.</li></ul><h2 id=\"step-4-optimize-the-root-cause\">Step 4: Optimize the Root Cause</h2><ul>  <li>At this point, you’ve narrowed the issue down to a specific function or section of code. Now it’s time to optimize it.</li>  <li>Optimization is usually subjective and comes with trade offs.    <ul>      <li>Discuss with your team to find a good balance between memory usage and performance.</li>    </ul>  </li></ul><p>In my case, the culprit was <strong>SheetJS</strong>, which caused memory leaks when reading a huge file. I replaced it with <strong>ExcelJS</strong> using streaming writes. I also implemented an <strong>async generator function</strong> to further reduce memory usage while reading a large the JSONL file, which i use to generate the report.</p><p>Most of your time will likely be spent on debugging. Once the issue is found and reliably reproducible, resolving it becomes much easier.</p><p>That’s it for this one!</p><p>Thanks for reading, and happy debugging! 😊</p>",
+            "url": "https://t4p4n.github.io/2025/10/19/debugging-high-memory-usage",
+            
+            
+            
+            "tags": ["memory","nodejs","oom","programming","debugging"],
+            
+            "date_published": "2025-10-19T00:00:00+05:30",
+            "date_modified": "2025-10-19T00:00:00+05:30",
+            
+                "author":  {
+                "name": "Tapan Kashyap",
+                "url": null,
+                "avatar": null
+                }
+                
+            
+        },
+    
+        {
             "id": "https://t4p4n.github.io/2025/04/12/is-ai-going-to-take-over-junior-software-dev-jobs",
             "title": "Is AI going to take over junior software dev jobs?",
             "summary": null,
