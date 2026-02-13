@@ -5,7 +5,7 @@ categories: [work, ai, json, postgres, sql]
 title: "AI generates suboptimal code, most of the time!"
 ---
 
-Recently I got assigned a ticket, a fairly detailed one actually.
+Recently I got a ticket assigned to me, a fairly detailed one actually.
 So it goes like this, we have a file named hsn_gst_master_list.json
 
 It contains data like this:
@@ -56,16 +56,16 @@ And there was a boolean (has_value_based_rates) on the parent object, which ment
 While prompting I referenced the relevant files, added one sample entry from the json file, and pasted the ticket contents.
 
 It wrote a script for seeding the db and a prisma schema. And asked to run prisma migrate, I did it without giving much attention, thinking let it cook for some time.
-Upon checking the schema, it was cuid for ids, created columns for all fields, added an index on the hsnCode field, even though it was already marked as a unique field, and a unique constraint cannot work without being indexed.
+Upon checking the schema, it was using CUID for Primary Key in the table, created columns for all fields, added an index on the hsnCode field, even though it was already marked as a unique field, and a unique constraint cannot work without being indexed.
 
 After seeing this, I still let it go, then I ran the migrate cmd, ran the seed script, inspected the table by checking all the columns, and doing some sorting stuff to figure out what can be removed and what can be improved.
 
-After I prompted again to first make the `tax_slabs` json column null, it did that. However, it made it null as in putting null in the json column and not NULL as Postgres null. This is pretty deceptive actually but it caught my eye somehow.
+After I prompted again to first make the `tax_slabs` json column null, cause only 52 rows had data, it did that. However, it made it null as in putting "null" in the json column and not null as in Postgres NULL. This is pretty deceptive actually but it caught my eye somehow.
 
-After this I prompted again to change from cuid to int based ids which are more performant as well as fit the use case here perfectly. Even though int based ids are guessable, since this data is already public, nothing sensitive in there, so int based ids are naturally a perfect fit for this use case.
+After this I prompted again to change from CUID to integer based IDs which are more performant as well as good fit the use case here perfectly. Even though integer based IDs are guessable, but since this data is already public, nothing sensitive in there, so integer based IDs are naturally a perfect fit for this use case.
 
-And prompted again to remove the redundant description from the `tax_slabs` object.
+And prompted again to remove the redundant description from the `tax_slabs` object, (i know its not that redudant actually, only 52 rows, but still i removed it though XD.).
 
-After this point the table started looking good to me. Then I prompted again to replace the json file import with a db call for querying the hsn master table via prisma.
+After this point the table started looking good to me. Then I prompted again to replace the json file import with a db call in endpoint for querying the hsn master table via prisma.
 
 Now it's done and working just fine. I still think things can be improved here like putting tax slabs in another table and referencing that in the hsn master table. But I think that's optimization for another day. Postgres is already good enough to handle this small amount of data. At this point I think the time & effort to optimise further won't give much of a meaningful performance improvement.
