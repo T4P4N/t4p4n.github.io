@@ -4,13 +4,385 @@
  <title>T4P4N</title>
  <link href="https://t4p4n.github.io/atom.xml" rel="self"/>
  <link href="https://t4p4n.github.io/"/>
- <updated>2026-02-14T00:41:02+05:30</updated>
+ <updated>2026-05-28T23:37:51+05:30</updated>
  <id>https://t4p4n.github.io</id>
  <author>
    <name>Tapan Kashyap</name>
    <email>tapank415@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>What I Enjoy Nowadays!</title>
+   <link href="https://t4p4n.github.io/2026/05/22/nowadays"/>
+   <updated>2026-05-22T00:00:00+05:30</updated>
+   <id>https://t4p4n.github.io/2026/05/22/nowadays</id>
+   <content type="html">&lt;p&gt;Things have changed a lot since last September. I had an emotional breakdown, partially recovered after a while, and then hit another low point between December and January. It was pretty harsh on my mental health. Though things eventually started falling into place, I lost interest in the activities that used to bring me satisfaction and joy. Previously, those were:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Gaming:&lt;/strong&gt; I used to play with my flatmates, mainly Roy and Gowtham. First, Gowtham left for Bangalore, then Roy also moved out of the flat, so I eventually uninstalled the game.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Cooking:&lt;/strong&gt; Before September, it was a fun activity. Afterward, it felt like a chore I wanted to avoid. Whatever I cooked, whether it turned out good or bad tasted completely bland to me.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Reading &amp;amp; Writing:&lt;/strong&gt; I used to read technical books and blogs and write my own posts. I stopped reading entirely and started constantly overthinking instead.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Trading:&lt;/strong&gt; I stepped away from the markets due to my mental health issues &amp;amp; fear of financial loss.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Socializing:&lt;/strong&gt; Talking to people outside my immediate circle felt like a chore. Conversations didn’t feel natural. Even to this day, I feel like I don’t have much to talk about.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Tinkering:&lt;/strong&gt; I stopped fiddling around with my laptop entirely, and it just collected dust for weeks.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Everything I mentioned above used to be a much more social experience; I was surrounded by people most of the time, whether it was my flatmates, office colleagues, or random strangers on the buses and roads of Kochi.&lt;/p&gt;
+
+&lt;p&gt;Now, things have changed. It has been close to three months since I moved back to Delhi, due to WFH. As soon as I returned, I started traveling short distances, visited my sister’s place, and met up with my best friend from school, Sahil. I also started going out for my usual night walks.&lt;/p&gt;
+
+&lt;p&gt;Over the past two months, I have taken up home workouts and started using whey protein. A few weeks ago, I also introduced early morning walks into my routine covering about 7KMs in 1.5 hours.
+ My average daily step count has increased to over 12k, up from a maximum of 7k–8k previously. Thanks to this new daily routine, my body is finally getting back into shape.&lt;/p&gt;
+
+&lt;p&gt;I have also started regaining my interests. Lately, I’ve been fiddling around with an open-source Android music player app named &lt;a href=&quot;https://github.com/vanilla-music/vanilla&quot;&gt;vanilla music player&lt;/a&gt; .&lt;/p&gt;
+
+&lt;p&gt;As a huge audiophile, I’ve spent countless hours on it just listening to music and curating playlists. Even though I’ve been coding for quite a few years, I had never actually touched an Android app before. Recently, I set up Android Studio on my laptop, forked code of Vanilla Music, and set up Gemini.&lt;/p&gt;
+
+&lt;p&gt;I prompted the AI with my feature request: &lt;em&gt;adding a “dequeue” option to the rest menu for each item in the queue.&lt;/em&gt; As it turned out, it only required a 3 to 4 line change. Honestly, I was surprised. It felt kind of magical to me.&lt;/p&gt;
+
+&lt;p&gt;I spent the last two weekends working on the same project to add music visualizations. I’ve been a massive fan of visualizers since the Windows Media Player and Winamp eras, yet it’s a feature missing from most modern Android music players. With the help of Gemini and an open-source visualization library, I managed to implement it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://files.horizon.pics/e3f12c45-bc1b-4f6e-9530-cfb17b22f07a?a=1669&amp;amp;mime1=image&amp;amp;mime2=jpeg&amp;amp;region=eu-central&quot; alt=&quot;screenshot of the app&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I wanted this feature in Vanilla Music so badly, but I never thought I’d be the one implementing it myself
+While also learning Java and bits of Kotlin along the way.&lt;/p&gt;
+
+&lt;p&gt;You can check the project here: &lt;a href=&quot;https://github.com/T4P4N/vanilla-music-extended&quot;&gt;https://github.com/T4P4N/vanilla-music-extended&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It feels incredibly refreshing. I feel confident enough to build just about anything now, whereas previously, I tend to avoid Android and iOS apps entirely. Now that I know the basics, I’m eager to build more Android apps.&lt;/p&gt;
+
+&lt;p&gt;Next up on my list are 3D games and game engines, which I might fiddle around with in the coming years… or perhaps after my next emotional breakdown.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>My Identity</title>
+   <link href="https://t4p4n.github.io/2026/05/04/my-identity"/>
+   <updated>2026-05-04T00:00:00+05:30</updated>
+   <id>https://t4p4n.github.io/2026/05/04/my-identity</id>
+   <content type="html">&lt;p&gt;Ever since i moved to kochi, people used to ask me where are you from, and which language do you speak, and the common answer which i used to give was, i’m from delhi and i speak hindi. But to the people who had i known for some time, e.g. my colleague and flatmates, then my answer to the same was somewhere around these lines:&lt;/p&gt;
+
+&lt;p&gt;I was born &amp;amp; brought up in north indian household, more particularly in haryanvi household, I’m from a place called narela, (Which is a satellite town of delhi), And We are connected to central delhi via train &amp;amp; roads, but not yet via metro/sub-way, hence I’m considering it as a satellite town, also population is quite low here when compared to central delhi.&lt;/p&gt;
+
+&lt;p&gt;So back to the topic, I’m a haryanvi guy, who speaks deshwali accent/dialect as my mother tongue, which comes under &lt;a href=&quot;https://en.wikipedia.org/wiki/Haryanvi_language&quot;&gt;haryanvi&lt;/a&gt; language itself. The accent is louder &amp;amp; more blunt when compared to hindi.
+Haryanvi is commonly considered as language of illiterates when spoken in the north indian cities, (including the major cities of haryana itself like gurgaon)&lt;/p&gt;
+
+&lt;p&gt;You can think of it like Scottish english &amp;amp; British english, Scottish english is more on the hard side compared to british english.
+Similarly haryanvi is on the hard side, when compared to hindi.&lt;/p&gt;
+
+&lt;p&gt;Another thing to notice is that, haryanvi do not have a written script like punjabi or urdu have. It  remained more of spoken language to this day.&lt;/p&gt;
+
+&lt;p&gt;Though the digital presence of language was limited to handful of bollywood movies, where it is used in movies like &lt;a href=&quot;https://en.wikipedia.org/wiki/Dangal_(2016_film)&quot;&gt;dangal&lt;/a&gt; &amp;amp; &lt;a href=&quot;https://en.wikipedia.org/wiki/Sultan_(2016_film)&quot;&gt;sultaan&lt;/a&gt;, but the accent was off and not at all matching the actual haryanvi accent, all the sentences were ending raee but in actuality we rarely use raee, we use h instead.&lt;/p&gt;
+
+&lt;p&gt;But around 2016-17, Jio came, content creation &amp;amp; content consumption exploded in india, 
+Things picked up quite a lot since then, now there’s web series, a few movies, music videos &amp;amp; social media creators which is kinda become the core driver for the language to gain popularity across india.&lt;/p&gt;
+
+&lt;p&gt;There a few other sub dialects of haryanvi which are commonly spoken in the Delhi NCR region, namely:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Deshwali/Bangru (Narela, Bawana, Pitampura, Najafgarh)&lt;/li&gt;
+  &lt;li&gt;Ahirwati (Gurgaon, nearby villages)&lt;/li&gt;
+  &lt;li&gt;Kauravi (Jamnapar aka Right side of Yamuna river, Rithala &amp;amp; Naraina)&lt;/li&gt;
+  &lt;li&gt;Gujari (Faridabad, Chatarpur, Sultanpur, namely spoken by yadavs)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;There’s also common thing to notice in delhi is that if you talk to a delhi police constable or DTC Bus driver/conductor, or a govt school teacher, You’ll mostly likely talking to a person who is from either from haryana or west up. Which kinda proves that delhi was/is mainly dominated by haryanvi &amp;amp; western up cultures, before the major migrations happened from Punjab and Purvanchal areas like bihar. Cause delhi in itself is very small compared to haryana &amp;amp; uttar pradesh &amp;amp; also covered from both sides by the same states.&lt;/p&gt;
+
+&lt;p&gt;These are all major sub dialects of haryanvi &amp;amp; places where they are spoken in majority:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Bagri (Lower Sirsa, Western hisar, Hanumangarh, Charkhi dadri)&lt;/li&gt;
+  &lt;li&gt;Rathee (Fatehabad, Tohana)&lt;/li&gt;
+  &lt;li&gt;Bangru (Jind, Kaithal, Panipat, Eastern hisar, upper Gohana, Sonepat which is closer to jind)&lt;/li&gt;
+  &lt;li&gt;Deshwali (Old rohtak, jhajjar, Sonepat, Narela, Bawana, Najafgarh)&lt;/li&gt;
+  &lt;li&gt;Ahirwati (Gurgaon, Rewari, Mahendragarh &amp;amp; Nearby villages)&lt;/li&gt;
+  &lt;li&gt;Mewati (Mewat, Nuh, Firozpur)&lt;/li&gt;
+  &lt;li&gt;Brij/Gujari (South delhi, Faridabad, Palwal, Noida, Jewar)&lt;/li&gt;
+  &lt;li&gt;Nardak (Panipat, Karnal, Kurukshetra)&lt;/li&gt;
+  &lt;li&gt;Puadhi/Ambalvi (Ambala, Yamunanagar, Kaithal, Shahbad)&lt;/li&gt;
+  &lt;li&gt;Kauravi (Muzaffarnagar, Meerut, Sharanpur, Ghaziabad, Moradabad, Faridabad, Baghpat)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;One common is thing is that all these dialects are mutually intelligible i.e anyone who speaks any of the above dialects can understand the other dialects with much hassle or effort.&lt;/p&gt;
+
+&lt;p&gt;Here’s some common words &amp;amp; sentences of deshwali, that we use in day to day life their English &amp;amp; hindi translation:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Haryanvi Phrase / Word&lt;/th&gt;
+      &lt;th&gt;English Translation&lt;/th&gt;
+      &lt;th&gt;Hindi Translation&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;K&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;What&lt;/td&gt;
+      &lt;td&gt;Kya&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;K haal h? / K gyan h?&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;How are you?&lt;/td&gt;
+      &lt;td&gt;Kya haal h?&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Kit h?&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Where are you?&lt;/td&gt;
+      &lt;td&gt;Kaha h?&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Aaliya!&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Arrived / Reached&lt;/td&gt;
+      &lt;td&gt;Aa gya!&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Jaliya!&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Went away&lt;/td&gt;
+      &lt;td&gt;Chala gya&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Chaale?&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Let’s go?&lt;/td&gt;
+      &lt;td&gt;Chalen?&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Yaade / Ude&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Here / There&lt;/td&gt;
+      &lt;td&gt;Yaha / Waha&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Idhr / Udhr&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Here / There&lt;/td&gt;
+      &lt;td&gt;Yaha / Waha&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Nigane / Nugayne&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;This side / That side&lt;/td&gt;
+      &lt;td&gt;Is taraf / Us taraf&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Ure-ne / Pare-ne&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;This way / That way&lt;/td&gt;
+      &lt;td&gt;Is taraf / Us taraf&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Aiygane / Ungayne&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;This way / That way&lt;/td&gt;
+      &lt;td&gt;Is taraf / Us taraf&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Gal-la&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;With (e.g., Tea with biscuit)&lt;/td&gt;
+      &lt;td&gt;Saath (Chai ke saath biscuit)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Manne&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Me / Myself / I&lt;/td&gt;
+      &lt;td&gt;Mujhe / Mereko&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Tanne&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;You&lt;/td&gt;
+      &lt;td&gt;Tereko / Tumhe&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Manne na bera&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;I don’t know&lt;/td&gt;
+      &lt;td&gt;Mujhe nahi pta&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Tanne kuch na bera&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;You don’t know anything&lt;/td&gt;
+      &lt;td&gt;Tumhe kuch ni pta&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Yo / Yu&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;This&lt;/td&gt;
+      &lt;td&gt;Yeh&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Yo k h?&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;What is this?&lt;/td&gt;
+      &lt;td&gt;Yeh kya h?&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;K hoya / hogya?&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;What happened?&lt;/td&gt;
+      &lt;td&gt;Kya hua?&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Bhaa&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Rate&lt;/td&gt;
+      &lt;td&gt;Bhav&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Tame&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Time&lt;/td&gt;
+      &lt;td&gt;Samay&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Ghana Tame la diya&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Taken too much time&lt;/td&gt;
+      &lt;td&gt;Bhut time lag gya&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Kukar&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;How&lt;/td&gt;
+      &lt;td&gt;Kaise&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Yo kukar kru?&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;How do I do this?&lt;/td&gt;
+      &lt;td&gt;Yeh kaise karu?&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Yo / Yu / Nu kukar hoya?&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;How did that happen?&lt;/td&gt;
+      &lt;td&gt;Yeh kaise hua?&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Mhara&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Our&lt;/td&gt;
+      &lt;td&gt;Humara&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Thara&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Your&lt;/td&gt;
+      &lt;td&gt;Tumhara / Aapka&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Thara ghar kit h?&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Where is your home?&lt;/td&gt;
+      &lt;td&gt;Aapka ghar kaha h?&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Gaam&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Village&lt;/td&gt;
+      &lt;td&gt;Gaon&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Balak&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Children&lt;/td&gt;
+      &lt;td&gt;Bacche&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Chora&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Boy / Male&lt;/td&gt;
+      &lt;td&gt;Ladka / Aadmi&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Chori&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Girl / Female&lt;/td&gt;
+      &lt;td&gt;Ladki / Aurat&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Log / Aadmi / Kasham&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Husband&lt;/td&gt;
+      &lt;td&gt;Pati&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Lugai / Bahu / Bodiya&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Wife&lt;/td&gt;
+      &lt;td&gt;Patni / Bahu&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Byaah&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Marriage&lt;/td&gt;
+      &lt;td&gt;Shaadi&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Mandar&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Temple&lt;/td&gt;
+      &lt;td&gt;Mandir&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Ta-Ta&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Warm / Hot&lt;/td&gt;
+      &lt;td&gt;Garam&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Ta-ti cha&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Warm / Hot tea&lt;/td&gt;
+      &lt;td&gt;Garam chai&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Bab-Bu&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Father&lt;/td&gt;
+      &lt;td&gt;Pitaji / Papa&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Maa / Mummy&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Mother&lt;/td&gt;
+      &lt;td&gt;Mataji / Maa / Mummy&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Ka-mal&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Soft / Good&lt;/td&gt;
+      &lt;td&gt;Naram / Acha&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Badiya&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Good&lt;/td&gt;
+      &lt;td&gt;Acha&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Bhunda&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Bad / Ugly&lt;/td&gt;
+      &lt;td&gt;Bekaar / Bura&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Gher&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Plot of land&lt;/td&gt;
+      &lt;td&gt;Plot&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Bhitar&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Inside&lt;/td&gt;
+      &lt;td&gt;Andar&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Bhar&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Outside&lt;/td&gt;
+      &lt;td&gt;Bahar&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Bhit&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Wall&lt;/td&gt;
+      &lt;td&gt;Deewal&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Ib&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Now&lt;/td&gt;
+      &lt;td&gt;Ab / Abhi&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Likad&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Go / Get out&lt;/td&gt;
+      &lt;td&gt;Nikal / Ja&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Likadna&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;To go / To exit&lt;/td&gt;
+      &lt;td&gt;Nikalna / Jaana&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Ib likad sako ho!&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;You can go now!&lt;/td&gt;
+      &lt;td&gt;Ab nikal sakte ho!&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;References:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://youtu.be/hIDJdvwtKu8&quot;&gt;https://youtu.be/hIDJdvwtKu8&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://youtu.be/59nZP7nFzH0&quot;&gt;https://youtu.be/59nZP7nFzH0&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://youtu.be/hn32Iwbm9r0&quot;&gt;https://youtu.be/hn32Iwbm9r0&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://youtu.be/MJJ5De2YHvY&quot;&gt;https://youtu.be/MJJ5De2YHvY&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
  
  <entry>
    <title>AI generates suboptimal code, most of the time!</title>

@@ -1,6 +1,24 @@
 [
   
     {
+      "title"    : "What I Enjoy Nowadays!",
+      "description" : "",
+      "category" : "",
+      "tags"     : "personal, reflections, coding",
+      "url"      : "/2026/05/22/nowadays",
+      "date"     : "2026-05-22 00:00:00 +0530"
+    } ,
+  
+    {
+      "title"    : "My Identity",
+      "description" : "",
+      "category" : "",
+      "tags"     : "Linguistics, Languages, Indentity",
+      "url"      : "/2026/05/04/my-identity",
+      "date"     : "2026-05-04 00:00:00 +0530"
+    } ,
+  
+    {
       "title"    : "AI generates suboptimal code, most of the time!",
       "description" : "",
       "category" : "",
